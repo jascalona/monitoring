@@ -17,10 +17,40 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background: rgb(159, 159, 175);
+    background: rgb(192, 192, 200);
+    border-radius: 5px;
     padding: 100px;
     margin-top: 20%;
     margin-left: 35%;
     margin-right: 35%;
+}
+
+.inputs input{
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 70px;
+    border-radius: 6px;
+    border: none;
+    border: solid 1px #939393;
+}
+
+.container-lg .btn{
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.container-lg .btn button{
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background: rgb(52, 16, 233);
+    color: #fff;
+    cursor: pointer;
+}
+
+.container-lg .btn button:hover{
+    background: rgba(52, 16, 233, 0.665);
 }
 
