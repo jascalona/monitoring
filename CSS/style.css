@@ -30,4 +30,18 @@ nav{
 nav .nav-links {
     font-size: 15px;
     margin-left: 25px;
+    list-style: none;
+    padding-top: 50px;
 }
+
+
+.nav-links li{
+    padding-top: 30px;
+}
+
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
