@@ -12,51 +12,54 @@
 }
 
 header .logo {
+    display: flex;
     font-size: 30px;
     display: flex;
     padding-top: 10px;
     padding-left: 10px;
 }
 
+.btn-sesion {
+    position: absolute;
+    margin-left: 90%;
+}
 
 nav{
-    margin-top: 16px;
+    margin-top: -11px;
     background: #656565;
     width: 200px;
     height: 100%;
     position: fixed;
 }
 
-nav .nav-links {
+nav .nav-link {
     display: block;
     font-size: 15px;
-    margin-left: px;
     list-style: none;
     padding-top: 50px;
 }
 
+.nav-link{
+    margin-top: 65px
+}
 
-.nav-links li{
-    padding-top: 35px;
+.nav-link li{
     line-height: 30px;
 }
 
-.nav-links li:hover{
-    transform: scale(1.1);
+.nav-link li{
+    line-height: 60px;
+    padding-left: 10px;
+    border-top: solid 1px #373535;
+
 }
 
-.nav-links li{
-    border-bottom: solid 1px;
-}
-
-.nav-links li i{
+.nav-link li i{
     font-size: 20px;
     padding-right: 8px;
 }
 
-.nav-links li a{
+.nav-link li a{
     color: #fff;
     text-decoration: none;
 }
-
-
