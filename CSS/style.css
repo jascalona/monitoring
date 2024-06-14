@@ -5,52 +5,29 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
-    background-image: url(/IMG/spencer-davis-ilQmlVIMN4c-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.header{
+    background: #656565;
+    height: 60px;
+    border-bottom: 1px solid rgb(139, 137, 137);
 }
 
-
-.container{
+header .logo {
+    font-size: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    background: rgb(192, 192, 200);
-    border-radius: 5px;
-    padding: 100px;
-    margin-top: 20%;
-    margin-left: 35%;
-    margin-right: 35%;
-}
-
-.inputs input{
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+    padding-top: 10px;
     padding-left: 10px;
-    padding-right: 70px;
-    border-radius: 6px;
-    border: none;
-    border: solid 1px #939393;
 }
 
-.container-lg .btn{
-    margin-top: 12px;
-    margin-left: 5px;
+
+nav{
+    margin-top: 16px;
+    background: #656565;
+    width: 200px;
+    height: 100%;
+    position: fixed;
 }
 
-.container-lg .btn button{
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    background: rgb(52, 16, 233);
-    color: #fff;
-    cursor: pointer;
+nav .nav-links {
+    font-size: 15px;
+    margin-left: 25px;
 }
-
-.container-lg .btn button:hover{
-    background: rgba(52, 16, 233, 0.665);
-}
-
