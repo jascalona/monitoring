@@ -30,7 +30,7 @@ nav{
 nav .nav-links {
     display: block;
     font-size: 15px;
-    margin-left: 25px;
+    margin-left: px;
     list-style: none;
     padding-top: 50px;
 }
@@ -38,21 +38,25 @@ nav .nav-links {
 
 .nav-links li{
     padding-top: 35px;
+    line-height: 30px;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links li{
+    border-bottom: solid 1px;
 }
 
 .nav-links li i{
-    margin-left: -10px;
-    font-size: 18px;
+    font-size: 20px;
     padding-right: 8px;
-    display: ;
 }
-
 
 .nav-links li a{
     color: #fff;
     text-decoration: none;
 }
-
-
 
 
