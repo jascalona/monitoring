@@ -12,22 +12,16 @@ body{
 }
 
 
-.container-lg{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.title h5{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
+    background: rgb(159, 159, 175);
+    padding: 50px;
     margin-top: 20%;
-    color: rgb(230, 224, 224);
-}
+    margin-left: 10%;
+    margin-right: -20px;
 
-.container {
-    background: blue;
 }
 
