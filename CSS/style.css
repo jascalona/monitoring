@@ -28,6 +28,7 @@ nav{
 }
 
 nav .nav-links {
+    display: block;
     font-size: 15px;
     margin-left: 25px;
     list-style: none;
@@ -36,12 +37,26 @@ nav .nav-links {
 
 
 .nav-links li{
-    padding-top: 30px;
+    padding-top: 35px;
 }
+
+.nav-links li i{
+    margin-left: -10px;
+    font-size: 18px;
+    padding-right: 8px;
+    display: ;
+}
+
 
 .nav-links li a{
     color: #fff;
     text-decoration: none;
 }
+
+ul li {
+    display: flex;
+    align-items: ;
+}
+
 
 
