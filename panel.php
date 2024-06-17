@@ -2,6 +2,10 @@
 session_start();
 if (!empty($_SESSION["CI"])) {
     header("./index.php");
+}else{
+    if ((time() - $_SESSION['time']) > 40) {
+        header("location: ./index.php");
+    }
 }
 
 ?>
