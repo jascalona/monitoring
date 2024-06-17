@@ -4,7 +4,7 @@ include "./CONTROLLER/conexion.php";
 
 session_start();
 
-if (!empty($_POST['btn-lg'])) {
+if (!empty($_POST['btn-i'])) {
     if (!empty($_POST['user']) and !empty($_POST['password'])) {
         
 
@@ -12,20 +12,20 @@ if (!empty($_POST['btn-lg'])) {
         $password = $_POST['password'];
 
 
-        $sql=$conexion->query(" SELECT *FROM user_lg WHERE user='$user' AND password='$password'  ");
+        $sql=$conexion->query(" SELECT *FROM user_lg WHERE email='$user' AND password='$password'  ");
 
 
         if ($datos=$sql->fetch_object()) {
-            $_SESSION["id"]= $datos->id;
+            $_SESSION["CI"]= $datos->CI;
             $_SESSION["user"]= $datos->user;
             $_SESSION["name"]= $datos->name;
             $_SESSION["surname"]= $datos->surname;
 
 
 
-            header("location: ./panel_gc.php");
+            header("location: ./panel.php");
         } else {
-            echo '<div style="background: rgb(190, 34, 34, 0.542); position: absolute; padding: 10px; margin-top: -66px; margin-left: -75px;" class="alert alert-danger">ACCESO DENEGADO. "COMUNIQUESE CON EL ADMINISTRADOR DE SISTEMA"</div>';
+            echo '<div style="background: rgb(211, 6, 47); padding: 20px; position: absolute; margin-top: -200px; font-size: 12px; display: flex; margin-left: -100px;" class="alert alert-danger">ACCESO DENEGADO. "COMUNIQUESE CON EL ADMINISTRADOR DE SISTEMA"</div>';
         }
         
 

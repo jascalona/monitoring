@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!empty($_SESSION["CI"])) {
+    header("./index.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +25,7 @@
     <!--FRAMEWORK BOOTSTRAP-->
 
 
+
 </head>
 <body>
     
@@ -28,14 +37,19 @@
             <div class="btn-sesion">
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    USER
+                    
+                    <?php
+                    echo $_SESSION["name"];
+                    ?>
+
                     </button>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+                    <li><a class="dropdown-item" href="./CONTROLLER//close.php">Cerrar Sesion</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        
 
 
             <nav>

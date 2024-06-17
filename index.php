@@ -12,33 +12,28 @@
 
 
         <div class="container">
-
-
-            <div class="container-lg">
                 <form action="" method="POST">
-
-                <div class="inputs">
-
-                        <h5>Iniciar Sesion</h5>
-                        <br>
-
+                    <div class="container-lg">
+                        <h5>Inicar Sesion</h5>
 
                         <?php
-                        include "./CONTROLLER/validar.php";
-                        ?>
+                        include "./CONTROLLER/validar.php"
 
-                        <input type="email" name="user" id="user" placeholder="Ingrese su Correo" required>
-                        <br>
-                        <input type="password" name="password" id="password" placeholder="Ingrese su Clave" required>
-                    </div>
+                        ?>                    
 
-                    <div class="btn">
-                        <button name="btn-lg" id="btn-lg" type="submit"><a href="">Ingresar</a></button>
-                    </div>
+
+                        <div class="inputs">
+                            <input type="email" name="user" id="user" placeholder="Ingrese su Usuario" required>
+                            <br>
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Clave de Intranet" required>
+                        </div>
+                    
+                        <div class="btn">
+                            <button name="btn-i" type="submit" value="submit"><a href="">Ingresar</a></button>
+                        </div>
+                    </>
                 </form>
-            </div>
-
-        </div>
 
 </body>
 </html>
