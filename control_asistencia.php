@@ -34,7 +34,7 @@ if (!empty($_SESSION["CI"])) {
 <header class="header">
         
         <div class="logo">
-            <p>XDV</p>
+            <a href="./panel.php"><p>XDV</p></a>
 
         <div class="btn-sesion">
             <div class="btn-group" role="group">
@@ -70,7 +70,7 @@ if (!empty($_SESSION["CI"])) {
 
 
 
-        
+
 
 
 
