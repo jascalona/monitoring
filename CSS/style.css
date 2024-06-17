@@ -65,3 +65,11 @@ nav .nav-link {
     color: #fff;
     text-decoration: none;
 }
+
+/*CONTROLDE ASISTENCIAS*/
+/*BTN-MODAL*/
+.carga-modal{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
