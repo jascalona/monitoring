@@ -110,6 +110,10 @@ if (!empty($_SESSION["CI"])) {
             <th scope="col">Apellido</th>
             <th scope="col">CI</th>
             <th scope="col">Email</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Tiempo</th>
+            <th scope="col">Ubicacion</th>
+
             </tr>
         </thead>
         <tbody>
