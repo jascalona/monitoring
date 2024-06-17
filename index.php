@@ -18,6 +18,10 @@
                 <form action="" method="POST">
                     <div class="inputs">
 
+                    <?php
+                    include ("./CONTROLLER/validar.php");
+                    ?>
+
                         <h5>Iniciar Sesion</h5>
                         <br>
 
@@ -27,7 +31,7 @@
                     </div>
 
                     <div class="btn">
-                        <button name="btn-lg" id="btn-lg" type="submit">Ingresar</button>
+                        <button name="btn-lg" id="btn-lg" type="submit"><a href="">Ingresar</a></button>
                     </div>
                 </form>
             </div>
