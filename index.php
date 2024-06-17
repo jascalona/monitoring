@@ -16,18 +16,20 @@
 
             <div class="container-lg">
                 <form action="" method="POST">
-                    <div class="inputs">
 
-                    <?php
-                    include ("./CONTROLLER/validar.php");
-                    ?>
+                <div class="inputs">
 
                         <h5>Iniciar Sesion</h5>
                         <br>
 
-                        <input type="email" name="email" id="email" required>
+
+                        <?php
+                        include "./CONTROLLER/validar.php";
+                        ?>
+
+                        <input type="email" name="user" id="user" placeholder="Ingrese su Correo" required>
                         <br>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" placeholder="Ingrese su Clave" required>
                     </div>
 
                     <div class="btn">
