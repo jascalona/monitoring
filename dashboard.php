@@ -33,6 +33,7 @@ if (!empty($_SESSION["CI"])) {
 
 
 
+
 </head>
 <body>
 
@@ -80,6 +81,9 @@ if (!empty($_SESSION["CI"])) {
 
 
 
+
+
+    <script src="./JS/dashboard.js"></script>
         
 </body>
 </html>

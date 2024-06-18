@@ -10,6 +10,10 @@ if (!empty($_SESSION["CI"])) {
 
 ?>
 
+<?php 
+include "./CONTROLLER/conexion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,43 +106,48 @@ if (!empty($_SESSION["CI"])) {
 
 
 
-    <div class="container-tables">
-        <table class="table table-striped">
-        <thead>
-            <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
-            <th scope="col">CI</th>
-            <th scope="col">Email</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Tiempo</th>
-            <th scope="col">Ubicacion</th>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            </tr>
-            <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-            </tr>
-        </tbody>
-        </table>
-    </div>
+        <div class="container-tables">
+            <table class="table table-dark table-striped" >    
+                    
+                    <thead class="bg-info">
+                        <tr>
+                            <th class="col">Nombre</th>
+                            <th class="col">Apellido</th>
+                            <th class="col">CI</th>
+                            <th class="col">Email</th>
+                            <th class="col">Fecha</th>
+                            <th class="col">Tiempo</th>
+                            <th class="col">Localidad</th>
+                        </tr>
+                
+                    </thead>
+                    <tbody>
 
-
-        
+                
+                        <?php
+                        include "./CONTROLLER/conexion.php";
+                        
+                        $sql=$conexion->query(" select *from repositorio ");
+                        while($datos = $sql->fetch_object()){ 
+                            ?>
+                
+                            <tr>
+                                <td><?= $datos->name?></td>
+                                <td><?= $datos->surname?></td>
+                                <td><?= $datos->CI?></td>
+                                <td><?= $datos->email?></td>
+                                <td><?= $datos->date?></td>
+                                <td><?= $datos->time?></td>
+                                <td><?= $datos->location?></td>
+                            </tr>
+                
+                            <?php
+                            
+                            }
+                            ?>
+                    </tbody>
+                    </table>
+            
 </body>
 </html>
