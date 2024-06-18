@@ -27,6 +27,12 @@ if (!empty($_SESSION["CI"])) {
     <script src="./JS/bootstrap.js"></script>
     <!--FRAMEWORK BOOTSTRAP-->
 
+    <!--FRAMEWORK APACHE_ECHARTS-->
+    <script src="./JS/FRAMEWORK/Apache_echarts.js"></script>
+    <!--FRAMEWORK APACHE_ECHARTS-->
+
+
+
 </head>
 <body>
 
