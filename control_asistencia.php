@@ -119,13 +119,13 @@ include "./CONTROLLER/conexion.php";
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Fecha</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Fecha de Ingreso">
+                        <input type="date" class="form-control" id="recipient-name" placeholder="Fecha de Ingreso">
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Hora de Ingreso</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Hora de Ingreso">
+                        <input type="time" class="form-control" id="recipient-name" placeholder="Hora de Ingreso">
                     </div>
 
 
