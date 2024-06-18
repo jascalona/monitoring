@@ -6,9 +6,9 @@
 }
 
 .header{
-    background: #656565;
+    background: #033761;
     height: 60px;
-    border-bottom: 1px solid rgb(139, 137, 137);
+    border-bottom: 1px solid #f3f3f372;
 }
 
 header .logo {
@@ -28,7 +28,7 @@ header .logo {
 
 nav{
     margin-top: -11px;
-    background: #656565;
+    background: #033761;
     width: 200px;
     height: 100%;
     position: fixed;
@@ -52,7 +52,7 @@ nav .nav-link {
 .nav-link li{
     line-height: 60px;
     padding-left: 10px;
-    border-top: solid 1px #373535;
+    border-top: solid 1px #f3f3f372;
 
 }
 
