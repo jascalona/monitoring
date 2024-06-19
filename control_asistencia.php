@@ -88,7 +88,7 @@ include "./CONTROLLER/conexion.php";
                     
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">CI</label>
-                        <input type="number" class="form-control" id="recipient-name" placeholder="Ingrese su Documento">
+                        <input type="number" class="form-control" id="CI" name="CI" placeholder="Ingrese su Documento de identidad Ejem. 30836440 ">
                     </div>
 
 
@@ -148,7 +148,7 @@ include "./CONTROLLER/conexion.php";
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Cargar Asistencia</button>
+                    <button type="submit" name="btn-load" id="btn-load" class="btn btn-primary">Cargar Asistencia</button>
                 </div>
                 </div>
             </div>
