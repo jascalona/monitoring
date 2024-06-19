@@ -72,6 +72,11 @@ include "./CONTROLLER/conexion.php";
 
 
 
+        <?php
+        
+        include "./CONTROLLER/load.php";
+        ?>
+
 
         <div class="carga-modal">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Cargar Asistencia</button>
@@ -113,7 +118,7 @@ include "./CONTROLLER/conexion.php";
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Email</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Email">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Email Ejem. example@grupoxvne.com">
                     </div>
 
 
@@ -148,8 +153,8 @@ include "./CONTROLLER/conexion.php";
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" name="btn-load" id="btn-load" class="btn btn-primary">Cargar Asistencia</button>
-                </div>
+                    <button type="submit" class="btn btn-primary" name="btnCarga" value="ok" >Cargar Asistencia</button>
+                    </div>
                 </div>
             </div>
             </div>
@@ -159,7 +164,7 @@ include "./CONTROLLER/conexion.php";
 
 
         <div class="container-tables">
-            <table class="table table-dark table-striped" >    
+            <table class="table table-sm" >    
                     
                     <thead class="bg-info">
                         <tr>
