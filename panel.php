@@ -60,8 +60,8 @@ if (!empty($_SESSION["CI"])) {
                 <ul class="nav-link">
                     <li><a href="./panel.php"><i style="color: #1EE08E;" class='bx bxs-dashboard'></i>Dashboard</a></li>
                     <li><a href="./control_asistencia.php"><i style="color: #f60551;" class='bx bx-task'></i>Control de Asistencias</a></li>
-                    <li><a href=""><i style="color: #09bfdf;" class='bx bxs-contact'></i>Control de Cuentas</a></li>
-                    <li><a href=""><i style="color: #2F35AF;" class='bx bxs-server' ></i>Registros</a></li>
+                    <li><a href="./control_cuentas"><i style="color: #09bfdf;" class='bx bxs-contact'></i>Control de Cuentas</a></li>
+                    <li><a href="./registro.php"><i style="color: #2F35AF;" class='bx bxs-server' ></i>Registros</a></li>
                     <li></li>
                 </ul>
             

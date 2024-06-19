@@ -27,6 +27,7 @@ header .logo {
 }
 
 nav{
+    position: fixed;
     margin-top: -11px;
     background: #033761;
     width: 200px;

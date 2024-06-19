@@ -3,13 +3,16 @@ session_start();
 if (!empty($_SESSION["CI"])) {
     header("./index.php");
 }else{
-    if ((time() - $_SESSION["time"]) > 40) {
+    if ((time() - $_SESSION['time']) > 40) {
         header("location: ./index.php");
     }
 }
 
 ?>
 
+<?php 
+include "./CONTROLLER/conexion.php";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +20,7 @@ if (!empty($_SESSION["CI"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://localhost/monitoring//CSS/style.css">
-    <title>Control de Asistencia</title>
+    <title>Registros</title>
 
     <!--BOX-ICONS-->
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -28,10 +31,8 @@ if (!empty($_SESSION["CI"])) {
     <script src="./JS/bootstrap.js"></script>
     <!--FRAMEWORK BOOTSTRAP-->
 
-
 </head>
 <body>
-
 
 
     <header class="header">
@@ -57,12 +58,12 @@ if (!empty($_SESSION["CI"])) {
         
 
 
-        <nav>
+            <nav>
                 <ul class="nav-link">
                     <li><a href="./panel.php"><i style="color: #1EE08E;" class='bx bxs-dashboard'></i>Dashboard</a></li>
                     <li><a href="./control_asistencia.php"><i style="color: #f60551;" class='bx bx-task'></i>Control de Asistencias</a></li>
                     <li><a href="control_cuentas.php"><i style="color: #09bfdf;" class='bx bxs-contact'></i>Control de Cuentas</a></li>
-                    <li><a href="./registro.php"><i style="color: #2F35AF;" class='bx bxs-server' ></i>Registros</a></li>
+                    <li><a href=""><i style="color: #2F35AF;" class='bx bxs-server' ></i>Registros</a></li>
                     <li></li>
                 </ul>
             
@@ -72,10 +73,45 @@ if (!empty($_SESSION["CI"])) {
 
 
 
+        <div class="container-tables">
+            <table class="table table-bordered border-primary" >    
+                    
+                    <thead class="bg-info">
+                        <tr>
+                            <th class="col">Nombre</th>
+                            <th class="col">Apellido</th>
+                            <th class="col">CI</th>
+                            <th class="col">Email</th>
+                            <th class="col">Cliente</th>
+                            <th class="col">Localidad</th>
+                        </tr>
+                
+                    </thead>
+                    <tbody>
 
-
-
-
-
+                
+                        <?php
+                        include "./CONTROLLER/conexion.php";
+                        
+                        $sql=$conexion->query(" select *from employees ");
+                        while($datos = $sql->fetch_object()){ 
+                            ?>
+                
+                            <tr>
+                                <td><?= $datos->name?></td>
+                                <td><?= $datos->surname?></td>
+                                <td><?= $datos->CI?></td>
+                                <td><?= $datos->email?></td>
+                                <td><?= $datos->customer?></td>
+                                <td><?= $datos->location?></td>
+                            </tr>
+                
+                            <?php
+                            
+                            }
+                            ?>
+                    </tbody>
+                    </table>
+            
 </body>
 </html>
