@@ -88,7 +88,7 @@ include "./CONTROLLER/conexion.php";
                     
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">CI</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Documento">
+                        <input type="number" class="form-control" id="recipient-name" placeholder="Ingrese su Documento">
                     </div>
 
 
@@ -119,13 +119,23 @@ include "./CONTROLLER/conexion.php";
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Fecha</label>
-                        <input type="date" class="form-control" id="recipient-name" placeholder="Fecha de Ingreso">
+                            <?php
+                                date_default_timezone_set('America/Caracas');
+                                $current_date=date("Y-m-d");
+                            ?>
+
+                        <input type="date" disabled class="form-control" id="recipient-name" value="<?php echo $current_date?>">
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Hora de Ingreso</label>
-                        <input type="time" class="form-control" id="recipient-name" placeholder="Hora de Ingreso">
+                            <?php
+                                date_default_timezone_set('America/Caracas');
+                                $current_time=date("H:i:s");
+                            ?>
+
+                        <input type="time" disabled class="form-control" id="recipient-name" value="<?php echo $current_time?>">
                     </div>
 
 

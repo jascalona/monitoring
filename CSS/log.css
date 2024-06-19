@@ -54,3 +54,8 @@ body{
     background: rgba(52, 16, 233, 0.665);
 }
 
+.btn button a{
+    color: #fff;
+    text-decoration: none;
+}
+
