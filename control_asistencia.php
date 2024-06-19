@@ -71,9 +71,11 @@ include "./CONTROLLER/conexion.php";
         </header>
 
 
+        <?php
+        include "./CONTROLLER/conexion.php";
+        ?>
 
         <?php
-        
         include "./CONTROLLER/load.php";
         ?>
 
