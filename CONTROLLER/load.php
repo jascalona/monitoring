@@ -1,6 +1,6 @@
 <?php
 
-if (!empty($_POST['btnCarga'])) {
+if (!empty($_POST['btn-load'])) {
     if (!empty($_POST['name']) and !empty($_POST['surnmae']) and !empty($_POST['ci']) and !empty($_POST['email']) and !empty($_POST['date']) and !empty($_POST['time']) and !empty($_POST['location'])){
 
         $name = $_POST['name'];
