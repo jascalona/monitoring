@@ -71,6 +71,7 @@ include "./CONTROLLER/conexion.php";
         </header>
 
 
+
         <?php
         include "./CONTROLLER/conexion.php";
         ?>
@@ -80,7 +81,10 @@ include "./CONTROLLER/conexion.php";
         ?>
 
 
+
         <div class="carga-modal">
+            <form action="" method="post">
+
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Cargar Asistencia</button>
         
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -95,13 +99,13 @@ include "./CONTROLLER/conexion.php";
                     
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">CI</label>
-                        <input type="number" class="form-control" id="CI" name="CI" placeholder="Ingrese su Documento de identidad Ejem. 30836440 ">
+                        <input type="number" class="form-control" id="CI" name="CI" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " required>
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Nombre</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Nombre">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Nombre" required>
                     </div>
 
 
@@ -114,13 +118,13 @@ include "./CONTROLLER/conexion.php";
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Apellido</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Apellido">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Apellido" required>
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Email</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Email Ejem. example@grupoxvne.com">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su Email Ejem. example@grupoxvne.com" required>
                     </div>
 
 
@@ -148,18 +152,19 @@ include "./CONTROLLER/conexion.php";
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Localidad</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Localidad">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Localidad" required>
                     </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" name="btnCarga" value="ok" >Cargar Asistencia</button>
+                    <button type="submit" class="btn btn-primary" name="btn-load" value="ok" >Cargar</button>
                     </div>
                 </div>
             </div>
             </div>
+            </form>
         </div>
 
 
@@ -170,6 +175,7 @@ include "./CONTROLLER/conexion.php";
                     
                     <thead class="bg-info">
                         <tr>
+                            <th class="col">ID</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
                             <th class="col">CI</th>
@@ -191,6 +197,7 @@ include "./CONTROLLER/conexion.php";
                             ?>
                 
                             <tr>
+                                <td><?= $datos->id?></td>
                                 <td><?= $datos->name?></td>
                                 <td><?= $datos->surname?></td>
                                 <td><?= $datos->CI?></td>
