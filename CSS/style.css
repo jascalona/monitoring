@@ -71,7 +71,7 @@ nav .nav-link {
 /*BTN-MODAL*/
 .carga-modal{
     display: flex;
-    justify-content: center;
+    margin-left: 200px;
     margin-top: 30px;
 }
 

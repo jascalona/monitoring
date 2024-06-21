@@ -71,17 +71,17 @@ include "./CONTROLLER/conexion.php";
         </header>
 
 
+        <?php
+            include "./CONTROLLER/conexion.php";
+            include "./CONTROLLER/Uload.php";
 
+        ?>
 
 
 
         <div class="carga-modal">
         
-            <?php
-            include "./CONTROLLER/conexion.php";
-            include "./CONTROLLER/Uload.php";
-            
-            ?>
+
 
             <form action="" method="post">
 
@@ -127,7 +127,7 @@ include "./CONTROLLER/conexion.php";
                                 $current_date=date("Y-m-d");
                             ?>
 
-                        <input type="date" name="date" id="date"  class="form-control" value="<?php echo $current_date?>">
+                        <input type="date" name="date" id="date" readonly  class="form-control" value="<?php echo $current_date?>">
                     </div>
 
 
@@ -138,7 +138,7 @@ include "./CONTROLLER/conexion.php";
                                 $current_time=date("H:i:s");
                             ?>
 
-                        <input  type="time" name="time" id="time"  class="form-control" value="<?php echo $current_time?>">
+                        <input  type="time" name="time" id="time" readonly class="form-control" value="<?php echo $current_time?>" >
                     </div>
 
 
@@ -158,6 +158,7 @@ include "./CONTROLLER/conexion.php";
 
             </form>
         </div>
+
 
 
 

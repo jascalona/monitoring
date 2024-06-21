@@ -14,7 +14,7 @@ if (!empty($_POST['carga'])) {
 
     $sql = $conexion->query("  INSERT INTO Uload (ci,name,surname,email,date,time,location)VALUES('$ci','$name','$surname','$email','$date','$time','$location') ");
         if ($sql==1) {
-            echo '<div style="margin-left: 470px; position: absolute;" class="alert alert-success">LA CARGA SE REALIZO CORRECTAMENTE</div>';
+            echo '';
         } else {
             echo '<div style="margin-left: 470px; position: absolute;" class="alert alert-danger">ERROR DE CONEXION COD: 10231514</div>';
         }
@@ -24,6 +24,6 @@ if (!empty($_POST['carga'])) {
     }
 }
 
-mysqli_close($conexion);
+mysqli_close($conexion)
 
 ?>
