@@ -155,6 +155,7 @@ include "./CONTROLLER/conexion.php";
                 </div>
             </div>
             </div>
+            
             </form>
         </div>
 
