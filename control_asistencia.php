@@ -72,17 +72,17 @@ include "./CONTROLLER/conexion.php";
 
 
 
-        <?php
-        include "./CONTROLLER/conexion.php";
-        ?>
-
-        <?php
-        include "./CONTROLLER/load.php";
-        ?>
 
 
 
         <div class="carga-modal">
+        
+            <?php
+            include "./CONTROLLER/conexion.php";
+            include "./CONTROLLER/load.php";
+            
+            ?>
+
             <form action="" method="post">
 
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Cargar Asistencia</button>
@@ -155,7 +155,7 @@ include "./CONTROLLER/conexion.php";
                 </div>
             </div>
             </div>
-            
+
             </form>
         </div>
 
