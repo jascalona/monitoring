@@ -79,7 +79,7 @@ include "./CONTROLLER/conexion.php";
         
             <?php
             include "./CONTROLLER/conexion.php";
-            include "./CONTROLLER/load.php";
+            include "./CONTROLLER/Uload.php";
             
             ?>
 
@@ -98,7 +98,7 @@ include "./CONTROLLER/conexion.php";
                     
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">CI</label>
-                        <input type="text" name="ci" id="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " required>
+                        <input type="number" name="ci" id="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " required>
                     </div>
 
 
@@ -127,7 +127,7 @@ include "./CONTROLLER/conexion.php";
                                 $current_date=date("Y-m-d");
                             ?>
 
-                        <input type="date" name="date" id="date" disabled class="form-control" value="<?php echo $current_date?>">
+                        <input type="date" name="date" id="date"  class="form-control" value="<?php echo $current_date?>">
                     </div>
 
 
@@ -138,7 +138,7 @@ include "./CONTROLLER/conexion.php";
                                 $current_time=date("H:i:s");
                             ?>
 
-                        <input type="time" name="time" id="time" disabled class="form-control" value="<?php echo $current_time?>">
+                        <input  type="time" name="time" id="time"  class="form-control" value="<?php echo $current_time?>">
                     </div>
 
 
@@ -150,7 +150,7 @@ include "./CONTROLLER/conexion.php";
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" name="btn-load" value="submit" >Cargar</button>
+                    <button type="submit" class="btn btn-primary" name="carga" value="submit" >Cargar</button>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,6 @@ include "./CONTROLLER/conexion.php";
                     
                     <thead class="bg-info">
                         <tr>
-                            <th class="col">ID</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
                             <th class="col">CI</th>
@@ -184,15 +183,14 @@ include "./CONTROLLER/conexion.php";
                         <?php
                         include "./CONTROLLER/conexion.php";
                         
-                        $sql=$conexion->query(" select *from repositorio ");
+                        $sql=$conexion->query(" SELECT *FROM  Uload ");
                         while($datos = $sql->fetch_object()){ 
                             ?>
                 
                             <tr>
-                                <td><?= $datos->id?></td>
+                                <td><?= $datos->ci?></td>
                                 <td><?= $datos->name?></td>
                                 <td><?= $datos->surname?></td>
-                                <td><?= $datos->CI?></td>
                                 <td><?= $datos->email?></td>
                                 <td><?= $datos->date?></td>
                                 <td><?= $datos->time?></td>
