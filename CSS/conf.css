@@ -1,0 +1,15 @@
+/*CONTROLDE ASISTENCIAS*/
+/*BTN-MODAL*/
+.carga-modal{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+/*TABLES CONTROL DE ASISTENCIAS*/
+.container-tables{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 1000px;
+    border: solid 1px #c6c0c0;
+}
