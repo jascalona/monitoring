@@ -99,32 +99,25 @@ include "./CONTROLLER/conexion.php";
                     
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">CI</label>
-                        <input type="text" name="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " required>
+                        <input type="text" name="ci" id="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " required>
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Nombre</label>
-                        <input type="text" name="name" class="form-control" placeholder="Ingrese su Nombre" required>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su Nombre" required>
                     </div>
 
-
-                    <!--
-                    <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    -->
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Apellido</label>
-                        <input type="text" name="surname" class="form-control" placeholder="Ingrese su Apellido" required>
+                        <input type="text" name="surname" id="surname" class="form-control" placeholder="Ingrese su Apellido" required>
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Email</label>
-                        <input type="text" name="email" class="form-control" placeholder="Ingrese su Email Ejem. example@grupoxvne.com" required>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Ingrese su Email Ejem. example@grupoxvne.com" required>
                     </div>
 
 
@@ -135,7 +128,7 @@ include "./CONTROLLER/conexion.php";
                                 $current_date=date("Y-m-d");
                             ?>
 
-                        <input type="date" name="date" disabled class="form-control" value="<?php echo $current_date?>">
+                        <input type="date" name="date" id="date" disabled class="form-control" value="<?php echo $current_date?>">
                     </div>
 
 
@@ -146,20 +139,20 @@ include "./CONTROLLER/conexion.php";
                                 $current_time=date("H:i:s");
                             ?>
 
-                        <input type="time" name="time" disabled class="form-control" value="<?php echo $current_time?>">
+                        <input type="time" name="time" id="time" disabled class="form-control" value="<?php echo $current_time?>">
                     </div>
 
 
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Localidad</label>
-                        <input type="text" name="location" class="form-control" placeholder="Localidad" required>
+                        <input type="text" name="location" id="location" class="form-control" placeholder="Localidad" required>
                     </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary" name="btn-load" value="ok" >Cargar</button>
+                    <button type="submit" class="btn btn-primary" name="btn-load" value="submit" >Cargar</button>
                     </div>
                 </div>
             </div>
