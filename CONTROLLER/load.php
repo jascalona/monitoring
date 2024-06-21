@@ -8,10 +8,12 @@ if (!empty($_POST['btn-load'])) {
         $ci = $_POST['ci'];
         $email = $_POST['email'];
         $date = $_POST['date'];
-        $file = $_POST['time'];
+        $time = $_POST['time'];
+        $location = $_POST['location'];
 
 
-        $sql = $conexion->query(" insert into repositorio(name,surname,ci,email,date,time,location)values('$name','$surname','$ci','$email','$date', '$time', '$location')");
+
+        $sql = $conexion->query(" INSERT INTO repositorio (name,surname,ci,email,date,time,location)values('$name','$surname','$ci','$email','$date', '$time', '$location')");
         if ($sql==1) {
             echo '<div style="margin-left: 470px; position: absolute;" class="alert alert-success">LA CARGA SE REALIZO CORRECTAMENTE</div>';
         } else {
