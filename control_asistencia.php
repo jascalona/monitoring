@@ -95,7 +95,6 @@ include "./CONTROLLER/conexion.php";
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
                     
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">CI</label>
@@ -148,7 +147,6 @@ include "./CONTROLLER/conexion.php";
                         <input type="text" name="location" id="location" class="form-control" placeholder="Localidad" required>
                     </div>
 
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
