@@ -19,18 +19,25 @@ include "./CONTROLLER/conexion.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
     <title>Control de Asistencia</title>
 
-    <!--BOX-ICONS-->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--BOX-ICONS-->
-
-    <!--FRAMEWORK BOOTSTRAP-->
+  <!--CSS STYLES-->
+  <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/conf.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/bootstrap.css">
-    <script src="./JS/bootstrap.js"></script>
-    <!--FRAMEWORK BOOTSTRAP-->
+    <!--CSS STYLES-->
 
+    <!--BOX-ICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--BOX-ICONS-->
+
+    <!--FRAMEWORK BOOTSTRAP-->
+    <script src="./JS/FRAMEWORK/bootstrap.js"></script>
+    <script src="./JS/FRAMEWORK/jquery.js"></script>
+    <script src="./JS/FRAMEWORK/bootstrap_ii.js"></script>
+    <!--FRAMEWORK BOOTSTRAP-->
+    
 </head>
 <body class="sub_page">
 
