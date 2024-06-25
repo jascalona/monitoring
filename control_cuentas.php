@@ -83,152 +83,63 @@ include "./CONTROLLER/conexion.php";
           </div>
         </nav>
       </div>
-    </header>
+    </header> 
     
-        <!-- Features Start -->
-        <div style="background: #85929E; padding: 50px;" class="container-fluid my-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-
-                    <div id="carouselExampleCaptions" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRlY25vbG9neXxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Monitoring Program</h5>
-                                <p>Lo que sabemos es una gota, lo que ignoramos es un océano!</p>
-                            </div>
-                            </div>
-                            <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                            </div>
-                            <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-
+          <!-- Blog Start -->
+          <div class="container-fluid pt-5">
+                <div class="container">
+                    <div class="text-center pb-2">
+                        <h1 class="mb-4"><?php echo $_SESSION['name'];?>, Bienvenido al portal de Socios XDV</h1>
                     </div>
-                    <div class="col-lg-7 py-5 py-lg-0">
-                        <h6 class="text-uppercase font-weight-bold">XDV</h6>
-                        <h1 class="mb-4">CONTROL DE ASISTENCIA</h1>
-                        <p class="mb-4">
-                            En el el siguiente modulo usted podra cargar su asitencia virtual, xtra Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae.
-                        </p>
-                        <ul class="list-inline">
-                            <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Aistencia Virtual</h6>
-                            <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Control de Llegada</h6></li>
-                            <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Control de Salida</h6></li>
-                            <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Desarrollo Continuo</h6></li>
-                        </ul>
-                        
-                    <!-- sesion carga modal start-->
-                        <div class="carga-modal">
-                            <form action="" method="post">
-
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Cargar Asistencia</button>
-                        
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Control de Asistencias</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">CI</label>
-                                        <input type="number" name="ci" id="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " readonly value="<?php echo$_SESSION['CI']?>">
-                                    </div>
-
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Nombre</label>
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su Nombre" readonly value="<?php echo $_SESSION['name']?>" >
-                                    </div>
-
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Apellido</label>
-                                        <input type="text" name="surname" id="surname" class="form-control" placeholder="Ingrese su Apellido" readonly value="<?php  echo $_SESSION['surname']?>">
-                                    </div>
-
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Status</label>
-                                        <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
-                                            <option></option>
-                                            <option value="Entrada">Entrada</option>
-                                            <option value="Salida">Salida</option>
-                                        </select>
-
-                                    </div>
-
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Fecha</label>
-                                            <?php
-                                                date_default_timezone_set('America/Caracas');
-                                                $current_date=date("Y-m-d");
-                                            ?>
-
-                                        <input type="date" name="date" id="date" readonly  class="form-control" value="<?php echo $current_date?>">
-                                    </div>
-
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Hora de Ingreso</label>
-                                            <?php
-                                                date_default_timezone_set('America/Caracas');
-                                                $current_time=date("H:i:s");
-                                            ?>
-
-                                        <input  type="time" name="time" id="time" readonly class="form-control" value="<?php echo $current_time?>" >
-                                    </div>
-
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Localidad</label>
-                                        <input type="text" name="location" id="location" class="form-control" placeholder="Localidad" required>
-                                    </div>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" class="btn btn-primary" name="carga" value="submit" >Cargar</button>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                                    style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                                    <h4 class="font-weight-bold mb-n1">01</h4>
                                 </div>
                             </div>
+                            <div class="bg-secondary" style="padding: 30px;">
+                                <div class="d-flex mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-muted ml-2" href=""></p>
+                                    </div>
+                                    <div class="d-flex align-items-center ml-4">
+                                        <i class="far fa-bookmark text-primary"></i>
+                                        <p class="text-muted ml-2">Monitoring program<p/>
+                                    </div>
+                                </div>
+                                <h4 style="color: #fff;" class="font-weight-bold mb-3">Monitoreo de Personal</h4>
+                                <p style="color: #fff;">Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem sea sed diam est lorem magna</p>
                             </div>
+                        </div>
 
-                            </form>
-                        </div>                    
-                    <!-- sesion carga modal end-->
-                        
+                        <div class="col-md-6 mb-5">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1539627831859-a911cf04d3cd?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                                    style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                                    <h4 class="font-weight-bold mb-n1">02</h4>
+                                </div>
+                            </div>
+                            <div class="bg-secondary" style="padding: 30px;">
+                                <div class="d-flex mb-3">
+                                    <div class="d-flex align-items-center">
+                                    </div>
+                                    <div class="d-flex align-items-center ml-4">
+                                        <i class="far fa-bookmark text-primary"></i>
+                                        <p class="text-muted ml-2" href="./Mi Banco/panel.php">Monitoring program</p>
+                                    </div>
+                                </div>
+                                <h4 style="color: #fff;" class="font-weight-bold mb-3">Control de Salidas y Entradas</h4>
+                                <p style="color: #fff;">Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem sea sed diam est lorem magna</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Features End -->
+            <!-- Blog End -->
     
     
 

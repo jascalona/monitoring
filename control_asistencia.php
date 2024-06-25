@@ -174,6 +174,12 @@ include "./CONTROLLER/conexion.php";
 
 
                                     <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Cliente</label>
+                                        <input type="text" name="surname" id="surname" class="form-control" readonly value="<?php  echo $_SESSION['customer']?>">
+                                    </div>
+
+
+                                    <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Status</label>
                                         <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
                                             <option></option>
@@ -247,6 +253,7 @@ include "./CONTROLLER/conexion.php";
                             <th class="col">CI</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
+                            <th class="col">Cliente</th>
                             <th class="col">Status</th>
                             <th class="col">Fecha</th>
                             <th class="col">Tiempo</th>
@@ -268,6 +275,7 @@ include "./CONTROLLER/conexion.php";
                                 <td><?= $datos->ci?></td>
                                 <td><?= $datos->name?></td>
                                 <td><?= $datos->surname?></td>
+                                <td><?= $datos->customer?></td>
                                 <td><?= $datos->status?></td>
                                 <td><?= $datos->date?></td>
                                 <td><?= $datos->time?></td>
