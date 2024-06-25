@@ -20,6 +20,7 @@ if (!empty($_POST['btn-i'])) {
             $_SESSION["user"]= $datos->user;
             $_SESSION["name"]= $datos->name;
             $_SESSION["surname"]= $datos->surname;
+            $_SESSION["email"]= $datos->email;
 
 
 

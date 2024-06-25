@@ -157,25 +157,29 @@ include "./CONTROLLER/conexion.php";
                                     
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">CI</label>
-                                        <input type="number" name="ci" id="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " required>
+                                        <input type="number" name="ci" id="ci" class="form-control" placeholder="Ingrese su Documento de identidad Ejem. 30836440 " readonly value="<?php echo$_SESSION['CI']?>">
                                     </div>
 
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Nombre</label>
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su Nombre" required>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su Nombre" readonly value="<?php echo $_SESSION['name']?>" >
                                     </div>
 
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Apellido</label>
-                                        <input type="text" name="surname" id="surname" class="form-control" placeholder="Ingrese su Apellido" required>
+                                        <input type="text" name="surname" id="surname" class="form-control" placeholder="Ingrese su Apellido" readonly value="<?php  echo $_SESSION['surname']?>">
                                     </div>
 
 
                                     <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Email</label>
-                                        <input type="text" name="email" id="email" class="form-control" placeholder="Ingrese su Email Ejem. example@grupoxvne.com" required>
+                                        <label for="recipient-name" class="col-form-label">Status</label>
+                                        <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                            <option value="Entrada">Entrada</option>
+                                            <option value="Salida">Salida</option>
+                                        </select>
+
                                     </div>
 
 
@@ -242,7 +246,7 @@ include "./CONTROLLER/conexion.php";
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
                             <th class="col">CI</th>
-                            <th class="col">Email</th>
+                            <th class="col">Status</th>
                             <th class="col">Fecha</th>
                             <th class="col">Tiempo</th>
                             <th class="col">Localidad</th>
@@ -263,7 +267,7 @@ include "./CONTROLLER/conexion.php";
                                 <td><?= $datos->ci?></td>
                                 <td><?= $datos->name?></td>
                                 <td><?= $datos->surname?></td>
-                                <td><?= $datos->email?></td>
+                                <td><?= $datos->status?></td>
                                 <td><?= $datos->date?></td>
                                 <td><?= $datos->time?></td>
                                 <td><?= $datos->location?></td>
