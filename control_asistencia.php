@@ -90,7 +90,42 @@ include "./CONTROLLER/conexion.php";
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
-                        <img class="img-fluid w-100" src="http://localhost/xdv-main//img/xdv.jpeg" alt="">
+
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRlY25vbG9neXxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Monitoring Program</h5>
+                                <p>Lo que sabemos es una gota, lo que ignoramos es un océano!</p>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+
                     </div>
                     <div class="col-lg-7 py-5 py-lg-0">
                         <h6 class="text-uppercase font-weight-bold">XDV</h6>
@@ -200,7 +235,7 @@ include "./CONTROLLER/conexion.php";
         ?>
 
         <div class="container-tables">
-            <table class="table table-sm" >    
+            <table class="table table-bordered" >    
                     
                     <thead class="bg-info">
                         <tr>
