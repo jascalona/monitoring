@@ -175,7 +175,8 @@ include "./CONTROLLER/conexion.php";
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Status</label>
-                                        <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                        <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+                                            <option></option>
                                             <option value="Entrada">Entrada</option>
                                             <option value="Salida">Salida</option>
                                         </select>
@@ -243,9 +244,9 @@ include "./CONTROLLER/conexion.php";
                     
                     <thead class="bg-info">
                         <tr>
+                            <th class="col">CI</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
-                            <th class="col">CI</th>
                             <th class="col">Status</th>
                             <th class="col">Fecha</th>
                             <th class="col">Tiempo</th>
