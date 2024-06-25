@@ -15,13 +15,13 @@ if (!empty($_POST['carga'])) {
 
     $sql = $conexion->query("  INSERT INTO Uload (ci,name,surname,customer,status,date,time,location)VALUES('$ci','$name','$surname','$customer','$status','$date','$time','$location') ");
         if ($sql==1) {
-            echo '';
+            echo '<div class="alert alert-success" role="alert">Su Asistencia fue Cargada con Exito!</div>';
         } else {
-            echo '<div style="margin-left: 470px; position: absolute;" class="alert alert-danger">ERROR DE CONEXION COD: 10231514</div>';
+            echo '<div class="alert alert-success" role="danger">Error de Conexion, Comuniquese con el Administrador de Sistema!</div>';
         }
     
     } else {
-        echo '<div style="margin-left: 207px; position: absolute;" class="alert alert-warning">DEBE LLENAR LOS CAMPOS VACIOS</div>';
+        echo '<div class="alert alert-success" role="warning">Debe llenar los Campos Vacios</div>';
     }
 }
 
