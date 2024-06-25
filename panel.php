@@ -64,6 +64,14 @@ if (!empty($_SESSION["CI"])) {
             </div>
             
 
+          <!-- control de sesiones administrator nav start -->
+          <!-- panel habilitado para administradores start -->
+
+           <?php  
+              if ($_SESSION['roll'] == "administrator") { ?>
+              
+            
+
           <div class="navbar-collapse" id="">
             <div class="custom_menu-btn">
               <button onclick="openNav()">
@@ -119,6 +127,76 @@ if (!empty($_SESSION["CI"])) {
       </div>
     </section>
   
+    <?php
+    }
+    ?>
+    <!-- panel habilitado para administradores end -->
+
+
+
+      <!-- control de sesiones operator nav start -->
+      <!-- panel habilitado para operator start -->
+       <?php
+          if ($_SESSION['roll'] == "operator") {  ?>
+
+            <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="panel.php">Panel</a>
+                <a href="./control_asistencia.php">Control de Asistencias</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="detail-box">
+              <h2>
+                Monitoring
+              </h2>
+              <h1>
+                Monitoring  <br />
+                program
+              </h1>
+              <div>
+                <a style="text-decoration: none;" href="">
+                  Echar un Vistazo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+         
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img-box">
+                    <img src="./images/tablero.png" alt="" />
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <?php
+    }
+    ?>
+    <!-- panel habilitado para operator end -->
+   
 
   
 
