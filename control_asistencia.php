@@ -23,7 +23,7 @@ include "./CONTROLLER/conexion.php";
 
   <!--CSS STYLES-->
   <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/conf.css">
+    <link rel="stylesheet" href="http://localhost/monitoring//CSS/conf.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/bootstrap.css">
     <!--CSS STYLES-->
