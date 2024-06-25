@@ -175,13 +175,13 @@ include "./CONTROLLER/conexion.php";
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Cliente</label>
-                                        <input type="text" name="surname" id="surname" class="form-control" readonly value="<?php  echo $_SESSION['customer']?>">
+                                        <input type="text" name="customer" id="customer" class="form-control" readonly value="<?php  echo $_SESSION['customer']?>">
                                     </div>
 
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Status</label>
-                                        <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+                                        <select name="status" id="status" class="form-select form-select-lg mb-3" aria-label="Large select example" >
                                             <option></option>
                                             <option value="Entrada">Entrada</option>
                                             <option value="Salida">Salida</option>
