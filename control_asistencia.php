@@ -242,7 +242,8 @@ include "./CONTROLLER/conexion.php";
             </div>
         </div>
         <!-- Features End -->
-    
+
+  
     
 
 
@@ -256,7 +257,7 @@ include "./CONTROLLER/conexion.php";
         <div class="container-tables">
             <table class="table table-bordered" >    
                     
-                    <thead class="bg-info">
+                    <thead class="table-primary">
                         <tr>
                             <th class="col">CI</th>
                             <th class="col">Nombre</th>

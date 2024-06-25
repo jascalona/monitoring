@@ -84,6 +84,8 @@ include "./CONTROLLER/conexion.php";
         </nav>
       </div>
     </header> 
+   
+
     
           <!-- Blog Start -->
           <div class="container-fluid pt-5">
@@ -140,6 +142,8 @@ include "./CONTROLLER/conexion.php";
                 </div>
             </div>
             <!-- Blog End -->
+             
+    <!-- end header section -->
     
     
 
@@ -153,7 +157,7 @@ include "./CONTROLLER/conexion.php";
         <div class="container-tables">
             <table class="table table-bordered" >    
                     
-                    <thead class="bg-info">
+                    <thead class="class-primary">
                         <tr>
                             <th class="col">CI</th>
                             <th class="col">Nombre</th>

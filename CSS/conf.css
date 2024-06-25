@@ -21,6 +21,10 @@
     width: 80%;
 }
 
+.container-tables table  {
+    background: #D6EAF8;
+}
+
 @media (max-width: 1100px) {
     .container-tables table {
         font-size: 12px;
