@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (!empty($_SESSION["CI"])) {
+    header("./index.php");
+}else{
+    if ((time() - $_SESSION['time']) > 40) {
+        header("location: ./index.php");
+    }
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +19,7 @@
 
 
     <!--CSS STYLES-->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/conf.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/bootstrap.css">
@@ -36,11 +47,22 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="panel.php">
-            <span>
-                XDV
-            </span>
-          </a>
+
+        <div class="btn-sesion">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                    <?php
+                    echo $_SESSION["name"];
+                    ?>
+
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./CONTROLLER//close.php">Cerrar Sesion</a></li>
+                    </ul>
+                </div>
+            </div>
+            
 
           <div class="navbar-collapse" id="">
             <div class="custom_menu-btn">
@@ -52,7 +74,7 @@
             </div>
             <div id="myNav" class="overlay">
               <div class="overlay-content">
-                <a href="panel.html">Panel</a>
+                <a href="panel.php">Panel</a>
                 <a href="./control_asistencia.php">Control de Asistencias</a>
                 <a href="./control_cuentas.php">Control de Cuentas</a>
                 <a href="./registro.php">Registros</a>
