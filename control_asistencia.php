@@ -32,15 +32,16 @@ include "./CONTROLLER/conexion.php";
     <!--FRAMEWORK BOOTSTRAP-->
 
 </head>
-<body>
+<body class="sub_page">
 
+       
+  <div style="background: #212F3D;" class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
 
-    <header class="header">
-            
-            <div class="logo">
-                <p>XDV</p>
-
-            <div class="btn-sesion">
+        <div class="btn-sesion">
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     
@@ -54,21 +55,32 @@ include "./CONTROLLER/conexion.php";
                     </ul>
                 </div>
             </div>
-        </div>
-        
-
-
-            <nav>
-                <ul class="nav-link">
-                    <li><a href="./panel.php"><i style="color: #1EE08E;" class='bx bxs-dashboard'></i>Dashboard</a></li>
-                    <li><a href="./control_asistencia.php"><i style="color: #f60551;" class='bx bx-task'></i>Control de Asistencias</a></li>
-                    <li><a href="control_cuentas.php"><i style="color: #09bfdf;" class='bx bxs-contact'></i>Control de Cuentas</a></li>
-                    <li><a href="./registro.php"><i style="color: #2F35AF;" class='bx bxs-server' ></i>Registros</a></li>
-                    <li></li>
-                </ul>
             
-            </nav>
-        </header>
+
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="panel.php">Panel</a>
+                <a href="./control_asistencia.php">Control de Asistencias</a>
+                <a href="./control_cuentas.php">Control de Cuentas</a>
+                <a href="./registro.php">Registros</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+
+
+    
 
 
         <?php
@@ -205,5 +217,16 @@ include "./CONTROLLER/conexion.php";
                     </tbody>
                     </table>
             
+
+
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").classList.toggle("menu_width");
+        document
+          .querySelector(".custom_menu-btn")
+          .classList.toggle("menu_btn-style");
+      }
+    </script>
 </body>
 </html>
