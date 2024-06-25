@@ -22,6 +22,7 @@ if (!empty($_POST['btn-i'])) {
             $_SESSION["surname"]= $datos->surname;
             $_SESSION["customer"]= $datos->customer;
             $_SESSION["email"]= $datos->email;
+            $_SESSION["roll"]= $datos->roll;
 
 
 

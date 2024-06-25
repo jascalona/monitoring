@@ -242,8 +242,14 @@ include "./CONTROLLER/conexion.php";
         <?php
             include "./CONTROLLER/conexion.php";
             include "./CONTROLLER/Uload.php";
-
         ?>
+
+        <!-- control de sesiones administrator -->
+        <!-- panel habilitado para administradores start -->
+        <?php
+        
+        if ($_SESSION['roll'] == "administrator") { ?>
+
 
         <div class="container-tables">
             <table class="table table-bordered" >    
@@ -288,6 +294,15 @@ include "./CONTROLLER/conexion.php";
                             ?>
                     </tbody>
                     </table>
+           
+        <?php
+        }
+        ?>
+        <!-- control de sesiones administrator -->
+        <!-- panel habilitado para administradores start -->
+
+
+       
             
 
 
