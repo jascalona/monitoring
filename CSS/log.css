@@ -13,8 +13,6 @@ body{
 
 
 .container{
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 20px;
     background: rgb(200, 192, 194);
@@ -25,6 +23,7 @@ body{
     margin-right: 35%;
 }
 
+/*
 .inputs input{
     margin-top: 10px;
     padding-top: 5px;
@@ -36,26 +35,5 @@ body{
     border: solid 1px #939393;
 }
 
-.container-lg .btn{
-    margin-top: 12px;
-    margin-left: 5px;
-}
 
-.container-lg .btn button{
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    background: rgb(52, 16, 233);
-    color: #fff;
-    cursor: pointer;
-}
-
-.container-lg .btn button:hover{
-    background: rgba(52, 16, 233, 0.665);
-}
-
-.btn button a{
-    color: #fff;
-    text-decoration: none;
-}
 
