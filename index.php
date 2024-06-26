@@ -26,29 +26,41 @@
     <!--FRAMEWORK BOOTSTRAP-->
 
 
+  
 
         <div class="container">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
-            </div>
-            <div class="modal-body">
-                <form>
-                <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+
+            <form action="" method="POST">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
                 </div>
-                <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+
+                <?php
+                include "./CONTROLLER/validar.php";
+                ?>
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">User</label>
+                        <input type="text" class="form-control" name="user" id="user" placeholder="Ingrese su Correo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese su Clave">
+                    </div>
+                    
                 </div>
-                </form>
+
+                <div class="modal-footer">
+                    <button type="submit" name="btn-i" class="btn btn-primary" value="submit">Iniciar</button>
+                </div>
+
+        
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Iniciar</button>
-            </div>
-            </div>
-        </div>
-        </div>
+        </form>
+
         </div>
 
 </body>
