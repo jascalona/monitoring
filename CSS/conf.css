@@ -43,3 +43,15 @@
         font-size: 7px;
     }
 }
+
+/*SEARCH JS CONTROL DE CUENTAS*/
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+

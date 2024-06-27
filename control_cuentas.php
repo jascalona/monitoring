@@ -22,7 +22,7 @@ include "./CONTROLLER/conexion.php";
     <title>Control de Cuentas</title>
 
   <!--CSS STYLES-->
-  <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="http://localhost/monitoring//CSS/conf.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/bootstrap.css">
@@ -147,6 +147,25 @@ include "./CONTROLLER/conexion.php";
     
     
 
+
+
+        <!-- start search filter -->
+        <div class="search">
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <input class="form-control me-2 light-table-filter" data-table="table_id" type="text" placeholder="Buscar">
+                    <hr>
+                </form>
+            </div>
+        </div>    
+        <!-- end search filter -->
+
+
+
+        <!-- start btn plugins filter -->
+            
+        <!-- end btn plugins filter -->
+        
 
         <?php
             include "./CONTROLLER/conexion.php";
