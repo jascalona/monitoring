@@ -38,6 +38,12 @@ include "./CONTROLLER/conexion.php";
     <script src="./JS/FRAMEWORK/bootstrap_ii.js"></script>
     <!--FRAMEWORK BOOTSTRAP-->
 
+    <!-- SCRIPT SEARCH-->
+    <script src="./JS/scrip.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- SCRIPT SEARCH-->
+   
+
 </head>
 <body class="sub_page">
 
@@ -181,6 +187,7 @@ include "./CONTROLLER/conexion.php";
                             <th class="col">CI</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
+                            <th class="col">Cliente</th>
                             <th class="col">Status</th>
                             <th class="col">Fecha</th>
                             <th class="col">Tiempo</th>
@@ -192,26 +199,46 @@ include "./CONTROLLER/conexion.php";
 
                 
                         <?php
-                        include "./CONTROLLER/conexion.php";
                         
-                        $sql=$conexion->query(" SELECT *FROM  Uload ");
-                        while($datos = $sql->fetch_object()){ 
-                            ?>
-                
+                        $conexion=mysqli_connect("localhost","root","","dpsgv02", "3306");               
+                        $SQL="SELECT Uload.ci, Uload.name, Uload.surname, Uload.customer, Uload.status,
+                        Uload.date, Uload.time, Uload.location FROM Uload
+                        $where";
+                        $dato = mysqli_query($conexion, $SQL);
+    
+                        if($dato -> num_rows >1){
+                        while($fila=mysqli_fetch_array($dato)){
+                        
+                        ?>
                             <tr>
-                                <td><?= $datos->ci?></td>
-                                <td><?= $datos->name?></td>
-                                <td><?= $datos->surname?></td>
-                                <td><?= $datos->status?></td>
-                                <td><?= $datos->date?></td>
-                                <td><?= $datos->time?></td>
-                                <td><?= $datos->location?></td>
+                            <td><?php echo $fila['ci']; ?></td>
+                            <td><?php echo $fila['name']; ?></td>
+                            <td><?php echo $fila['surname']; ?></td>
+                            <td><?php echo $fila['customer']; ?></td>
+                            <td><?php echo $fila['status']; ?></td>
+                            <td><?php echo $fila['date']; ?></td>
+                            <td><?php echo $fila['time']; ?></td>
+                            <td><?php echo $fila['location']; ?></td>
+    
                             </tr>
-                
-                            <?php
+    
+    
+                        <?php
+                        }
+                        }else{
+    
+                        ?>
+                        <tr class="text-center">
+                        <td colspan="16">No existen registros</td>
+                        </tr>
+    
+                        <?php
+        
+                        }
+    
+                        ?>
                             
-                            }
-                            ?>
+
                     </tbody>
                     </table>
             
