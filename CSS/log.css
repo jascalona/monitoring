@@ -13,27 +13,21 @@ body{
 
 
 .container{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    background: rgb(200, 192, 194);
     border-radius: 5px;
-    padding: 100px;
     margin-top: 15%;
-    margin-left: 35%;
-    margin-right: 35%;
 }
 
-/*
-.inputs input{
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 70px;
-    border-radius: 6px;
-    border: none;
-    border: solid 1px #939393;
+
+.background-lg{
+background: rgba(200, 192, 194, 0.661);
+padding: 100px;
 }
 
+.background-lg input {
+    padding-right: 100px;
+}
 
 
