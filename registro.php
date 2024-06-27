@@ -112,6 +112,12 @@ include "./CONTROLLER/conexion.php";
                     <!-- Uload registro -->
                     <div class="container-uload-registro">
 
+                        <?php
+                        include "./CONTROLLER/Uload-register.php";
+                        ?>
+
+                    <form action="" method="POST">
+
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Registro de Personal</button>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -122,58 +128,65 @@ include "./CONTROLLER/conexion.php";
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form>
-                                
+
+                                    
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Cedula</label>
-                                        <input type="number" name="ci" class="form-control" id="recipient-name" placeholder="Ingrese su documento sin caracteres especiales como '.,-/*' ">
+                                        <input type="number" name="ci" class="form-control" id="ci" placeholder="Ingrese su documento sin caracteres especiales como '.,-/*' " required>
                                     </div>
 
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Nombre</label>
-                                        <input type="text" name="name" class="form-control" id="recipient-name" placeholder="Ingrese su Nombre">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Ingrese su Nombre" required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Apellido</label>
-                                        <input type="text" name="surname" class="form-control" id="recipient-name" placeholder="Ingrese su Apellido">
+                                        <input type="text" name="surname" class="form-control" id="surname" placeholder="Ingrese su Apellido" required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Cliente</label>
-                                        <input type="text" name="customer" class="form-control" id="recipient-name" placeholder="Ingrese nombre de cuenta asignada">
+                                        <input type="text" name="customer" class="form-control" id="customer" placeholder="Ingrese nombre de cuenta asignada" required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Email</label>
-                                        <input type="email" name="email" class="form-control" id="recipient-name" placeholder="Ingrese su Email">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo;  example.email@grupoxven.com">
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Clave</label>
-                                        <input type="password" name="password" class="form-control" id="recipient-name" placeholder="Ingrese su Clave">
+                                        <input type="password" name="password" class="form-control" id="password" placeholder="Ingrese su Clave">
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Roll</label>
-                                        <select name="status" id="roll" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+                                        <select name="roll" id="roll" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
                                             <option></option>
                                             <option value="operator">Operador</option>
                                             <option value="administrator">Administrador</option>
                                         </select>
-
                                     </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Localidad</label>
+                                        <input type="text" name="location" class="form-control" id="location" placeholder="Ingrese su Clave">
+                                    </div>
+
                                 
-                                </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary">Cargar Datos</button>
+                                <button type="submit" name="btn-uload" class="btn btn-primary" value="submit">Cargar Datos</button>
                             </div>
                             </div>
                         </div>
                         </div>
+                        </form>
+
 
                         </div>
                     <!-- Uload registro -->
@@ -220,7 +233,7 @@ include "./CONTROLLER/conexion.php";
                         <?php
                         include "./CONTROLLER/conexion.php";
                         
-                        $sql=$conexion->query(" SELECT *FROM  employees ");
+                        $sql=$conexion->query(" SELECT *FROM  user_lg ");
                         while($datos = $sql->fetch_object()){ 
                             ?>
                 

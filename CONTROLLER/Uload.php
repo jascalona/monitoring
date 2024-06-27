@@ -17,11 +17,11 @@ if (!empty($_POST['carga'])) {
         if ($sql==1) {
             echo '<div class="alert alert-success" role="alert">Su Asistencia fue Cargada con Exito!</div>';
         } else {
-            echo '<div class="alert alert-success" role="danger">Error de Conexion, Comuniquese con el Administrador de Sistema!</div>';
+            echo '<div class="alert alert-danger" role="danger">Error de Conexion, Comuniquese con el Administrador de Sistema!</div>';
         }
     
     } else {
-        echo '<div class="alert alert-success" role="warning">Debe llenar los Campos Vacios</div>';
+        echo '<div class="alert alert-warning" role="warning">Debe llenar los Campos Vacios</div>';
     }
 }
 
