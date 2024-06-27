@@ -103,7 +103,7 @@ include "./CONTROLLER/conexion.php";
                 </div>
                 <div class="col-lg-7 mt-4 mt-lg-0">
                     <h6 class="text-uppercase">NOSOTROS</h6>
-                    <h1 class="text-dark" class="mb-4">Bienvenido(a) a la modulo de registro XDV</h1>
+                    <h1 class="text-dark" class="mb-4">Bienvenido(@) al modulo de registro XDV</h1>
                     <p>Somos un eficiente grupo empresarial, con la mejor propuesta integral de tecnología, productos, soluciones y servicios, para facilitar la gestión documental, los servicios de artes gráficas y la logística nacional.  
                         Representante Exclusivo de la marca Xerox en Venezuela, dedicada a la comercialización y distribución directa e indirecta de productos, tecnologías y soluciones Xerox para el sustento de nuestros clientes en el manejo de sus documentos.
                     </p>
