@@ -39,7 +39,7 @@ include "./CONTROLLER/conexion.php";
     <!--FRAMEWORK BOOTSTRAP-->
 
     <!-- SCRIPT SEARCH-->
-    <script src="./JS/scrip.js"></script>
+    <script src="./JS/search.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- SCRIPT SEARCH-->
    
@@ -159,12 +159,14 @@ include "./CONTROLLER/conexion.php";
         <div class="search">
             <div class="container-fluid">
                 <form class="d-flex">
-                    <input class="form-control me-2 light-table-filter" data-table="table_id" type="text" placeholder="Buscar">
+                    <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar">
                     <hr>
                 </form>
             </div>
         </div>    
         <!-- end search filter -->
+
+        
 
 
 
@@ -200,7 +202,7 @@ include "./CONTROLLER/conexion.php";
                 
                         <?php
                         
-                        $conexion=mysqli_connect("localhost","root","","dpsgv02", "3306");               
+                        include "./CONTROLLER/conexion.php";
                         $SQL="SELECT Uload.ci, Uload.name, Uload.surname, Uload.customer, Uload.status,
                         Uload.date, Uload.time, Uload.location FROM Uload
                         $where";
@@ -253,5 +255,6 @@ include "./CONTROLLER/conexion.php";
           .classList.toggle("menu_btn-style");
       }
     </script>
+    
 </body>
 </html>
