@@ -151,8 +151,6 @@ include "./CONTROLLER/conexion.php";
              
     <!-- end header section -->
     
-    
-
 
 
         <!-- start search filter -->
@@ -166,13 +164,6 @@ include "./CONTROLLER/conexion.php";
         </div>    
         <!-- end search filter -->
 
-        
-
-
-
-        <!-- start btn plugins filter -->
-            
-        <!-- end btn plugins filter -->
         
 
         <?php

@@ -38,6 +38,12 @@ include "./CONTROLLER/conexion.php";
     <script src="./JS/FRAMEWORK/bootstrap_ii.js"></script>
     <!--FRAMEWORK BOOTSTRAP-->
 
+
+    <!-- SCRIPT SEARCH-->
+    <script src="./JS/search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- SCRIPT SEARCH-->
+
 </head>
 <body class="sub_page">
 
@@ -110,6 +116,17 @@ include "./CONTROLLER/conexion.php";
     </div>
     <!-- About End -->
 
+
+        <!-- start search filter -->
+        <div class="search">
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar">
+                    <hr>
+                </form>
+            </div>
+        </div>    
+        <!-- end search filter -->
 
 
 
