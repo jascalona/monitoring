@@ -107,9 +107,77 @@ include "./CONTROLLER/conexion.php";
                     <p>Somos un eficiente grupo empresarial, con la mejor propuesta integral de tecnología, productos, soluciones y servicios, para facilitar la gestión documental, los servicios de artes gráficas y la logística nacional.  
                         Representante Exclusivo de la marca Xerox en Venezuela, dedicada a la comercialización y distribución directa e indirecta de productos, tecnologías y soluciones Xerox para el sustento de nuestros clientes en el manejo de sus documentos.
                     </p>
-                    <P>Nuestra meta es ayudar a las pequeñas, medianas y grandes empresas a reducir la complejidad, proporcionar un entorno optimizado, reducir la impresión, mejorar sus procesos de negocios, para que puedan centrarse en la innovación de productos. Todo esto se resume en una palabra "Eficiencia" que solo es posible si cuenta con el equipo idóneo y el soporte necesario de Xerox.
+                    <P>Nuestra meta es ayudar a las pequeñas, medianas y grandes empresas a reducir la complejidad, proporcionar un entorno optimizado, reducir la impresión, mejorar sus procesos de negocios, para que puedan centrarse en la innovación de productos. Todo esto se resume en una palabra "Eficiencia" que solo es posible si cuenta con el equipo idóneo y el soporte necesario de Xerox.</P>
+                
+                    <!-- Uload registro -->
+                    <div class="container-uload-registro">
 
-                    </P>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Registro de Personal</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Registro</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Cedula</label>
+                                        <input type="number" name="ci" class="form-control" id="recipient-name" placeholder="Ingrese su documento sin caracteres especiales como '.,-/*' ">
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Nombre</label>
+                                        <input type="text" name="name" class="form-control" id="recipient-name" placeholder="Ingrese su Nombre">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Apellido</label>
+                                        <input type="text" name="surname" class="form-control" id="recipient-name" placeholder="Ingrese su Apellido">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Cliente</label>
+                                        <input type="text" name="customer" class="form-control" id="recipient-name" placeholder="Ingrese nombre de cuenta asignada">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" id="recipient-name" placeholder="Ingrese su Email">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Clave</label>
+                                        <input type="password" name="password" class="form-control" id="recipient-name" placeholder="Ingrese su Clave">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Roll</label>
+                                        <select name="status" id="roll" class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+                                            <option></option>
+                                            <option value="operator">Operador</option>
+                                            <option value="administrator">Administrador</option>
+                                        </select>
+
+                                    </div>
+                                
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Cargar Datos</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        </div>
+                    <!-- Uload registro -->
+                
                 </div>
             </div>
         </div>
@@ -117,8 +185,11 @@ include "./CONTROLLER/conexion.php";
     <!-- About End -->
 
 
-        <!-- start search filter -->
-        <div class="search">
+  
+
+
+       <!-- start search filter -->
+       <div class="search">
             <div class="container-fluid">
                 <form class="d-flex">
                     <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar">
@@ -127,7 +198,6 @@ include "./CONTROLLER/conexion.php";
             </div>
         </div>    
         <!-- end search filter -->
-
 
 
     <div style="background: #DBD9DF;" class="container-tables">
