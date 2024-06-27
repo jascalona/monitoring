@@ -153,12 +153,12 @@ include "./CONTROLLER/conexion.php";
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Email</label>
-                                        <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo;  example.email@grupoxven.com">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo;  example.email@grupoxven.com" required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Clave</label>
-                                        <input type="password" name="password" class="form-control" id="password" placeholder="Ingrese su Clave">
+                                        <input type="password" name="password" class="form-control" id="password" placeholder="Ingrese su Clave" value="" required>
                                     </div>
 
                                     <div class="mb-3">
@@ -173,7 +173,7 @@ include "./CONTROLLER/conexion.php";
 
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Localidad</label>
-                                        <input type="text" name="location" class="form-control" id="location" placeholder="Ingrese su Clave">
+                                        <input type="text" name="location" class="form-control" id="location" placeholder="Ingrese su Localidad" required>
                                     </div>
 
                                 
@@ -224,6 +224,7 @@ include "./CONTROLLER/conexion.php";
                             <th class="col">Email</th>
                             <th class="col">Cliente</th>
                             <th class="col">Localidad</th>
+                            <th class="col">Roll</th>
                         </tr>
                 
                     </thead>
@@ -244,6 +245,7 @@ include "./CONTROLLER/conexion.php";
                                 <td><?= $datos->email?></td>
                                 <td><?= $datos->customer?></td>
                                 <td><?= $datos->location?></td>
+                                <td><?= $datos->roll?></td>
                             </tr>
                 
                             <?php
