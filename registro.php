@@ -218,6 +218,7 @@ include "./CONTROLLER/conexion.php";
                     
                     <thead class="table-primary">
                         <tr>
+                            <th class="col">id</th>
                             <th class="col">CI</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
@@ -239,6 +240,7 @@ include "./CONTROLLER/conexion.php";
                             ?>
                 
                             <tr>
+                                <td><?= $datos->id?></td>
                                 <td><?= $datos->CI?></td>
                                 <td><?= $datos->name?></td>
                                 <td><?= $datos->surname?></td>
@@ -246,6 +248,10 @@ include "./CONTROLLER/conexion.php";
                                 <td><?= $datos->customer?></td>
                                 <td><?= $datos->location?></td>
                                 <td><?= $datos->roll?></td>
+
+                                 <td>
+                                    <a href="panel.php?id=<?= $datos->id?>"><i class='bx bx-trash-alt'></i></a>
+                                </td>
                             </tr>
                 
                             <?php
