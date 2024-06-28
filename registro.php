@@ -114,6 +114,7 @@ include "./CONTROLLER/conexion.php";
 
                         <?php
                         include "./CONTROLLER/Uload-register.php";
+                        include "./CONTROLLER/delete.php";
                         ?>
 
                     <form action="" method="POST">
@@ -218,7 +219,6 @@ include "./CONTROLLER/conexion.php";
                     
                     <thead class="table-primary">
                         <tr>
-                            <th class="col">id</th>
                             <th class="col">CI</th>
                             <th class="col">Nombre</th>
                             <th class="col">Apellido</th>
@@ -226,6 +226,7 @@ include "./CONTROLLER/conexion.php";
                             <th class="col">Cliente</th>
                             <th class="col">Localidad</th>
                             <th class="col">Roll</th>
+                            <th class="col"><i class='bx bx-trash-alt'></i></th>
                         </tr>
                 
                     </thead>
@@ -240,7 +241,6 @@ include "./CONTROLLER/conexion.php";
                             ?>
                 
                             <tr>
-                                <td><?= $datos->id?></td>
                                 <td><?= $datos->CI?></td>
                                 <td><?= $datos->name?></td>
                                 <td><?= $datos->surname?></td>
@@ -250,7 +250,7 @@ include "./CONTROLLER/conexion.php";
                                 <td><?= $datos->roll?></td>
 
                                  <td>
-                                    <a href="panel.php?id=<?= $datos->id?>"><i class='bx bx-trash-alt'></i></a>
+                                    <a href="registro.php?id=<?= $datos->id?>"><i class='bx bx-trash-alt'></i></a>
                                 </td>
                             </tr>
                 
