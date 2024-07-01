@@ -832,7 +832,7 @@ body {
   /* end info section */
   /* footer section*/
   .footer_section {
-    background-color: #e6e6e6;
+    background-color: #f3efef5d;
     padding: 20px;
   }
   
@@ -848,7 +848,7 @@ body {
 
 /*SESION-PUBLIC*/
 .sesion-public {
-  background: rgb(156, 152, 152);
+  background: #0d1c22;
   padding: 100px;
   margin: 8%;
   padding-bottom: 50px;
@@ -857,6 +857,7 @@ body {
 }
 
 .sesion-public p{
+  color: #fff;
   font-size: 20px;
   padding-right: 40px;
 }
@@ -889,11 +890,20 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
     .sesion-public {
       display: flex;
       justify-content: center;
       flex-direction: column;
+    }
+
+    .sesion-public p{
+      font-size: 13px;
+    }
+
+    .sesion-public img{
+      width: 300px;
+      height: 250px;
     }
 
 }
@@ -906,6 +916,19 @@ body {
     .sesion-public .img-fluid{
       width: 300px;
       height: 250px;
+    }
+}
+
+@media (max-width: 550px) {
+    .sesion-public p{
+      font-size: 12px;
+      margin: -5%;
+    }
+
+    .sesion-public img{
+      margin-top: 50px;
+      width: 200px;
+      height: 100px;
     }
 }
 
