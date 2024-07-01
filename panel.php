@@ -19,7 +19,7 @@ if (!empty($_SESSION["CI"])) {
 
 
     <!--CSS STYLES-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="http://localhost/monitoring//CSS/style.css">
     <link rel="stylesheet" href="./CSS/conf.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/bootstrap.css">
@@ -127,6 +127,37 @@ if (!empty($_SESSION["CI"])) {
       </div>
     </section>
   
+
+
+          <div class="sesion-public">
+                <i class="text-center">
+                  <p> <b>L</b>  orem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe unde ea, 
+                    perspiciatis voluptatum incidunt facere a suscipit sunt tempora est dolore illum corporis 
+                    reprehenderit fugiat magnam! Quibusdam, molestiae repellat? Eveniet amet, sit quaerat dolorum 
+                    enim ducimus, quam saepe dolore maiores labore suscipit laboriosam dolor odit est minus cumque aperiam!
+                  
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                  </p>
+                </i>  
+
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+
+    <!-- close sesion administrator -->
     <?php
     }
     ?>

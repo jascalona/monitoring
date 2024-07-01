@@ -845,4 +845,62 @@ body {
   .footer_section a {
     color: #fefdfc;
   }
-  /*# sourceMappingURL=style.css.map */
+
+/*SESION-PUBLIC*/
+.sesion-public {
+  margin: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.sesion-public p{
+  font-size: 20px;
+  padding-right: 40px;
+}
+
+.sesion-public p b{
+  font-size: 50px;
+}
+
+.sesion-public img{
+  width: 550px;
+  height: auto;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1320px) {
+    .sesion-public  img{
+        width: 350px;
+        height: 400px;
+    } 
+
+    .sesion-public p{
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 970px) {
+  .sesion-public p{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 850px) {
+    .sesion-public {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .sesion-public {
+      color: #fff;
+    }
+
+    .sesion-public .img-fluid{
+      width: 300px;
+      height: 250px;
+    }
+}
