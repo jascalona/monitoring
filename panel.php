@@ -127,6 +127,7 @@ if (!empty($_SESSION["CI"])) {
       </div>
     </section>
   
+    </div>
 
 
           <div class="sesion-public">
@@ -148,7 +149,6 @@ if (!empty($_SESSION["CI"])) {
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
               </div>
           </div>
-
 
 
 
@@ -222,7 +222,31 @@ if (!empty($_SESSION["CI"])) {
         </div>
       </div>
     </section>
-  
+
+    </div>
+
+        <div class="sesion-public">
+                <i class="text-center">
+                  <p> <b>L</b>  orem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe unde ea, 
+                    perspiciatis voluptatum incidunt facere a suscipit sunt tempora est dolore illum corporis 
+                    reprehenderit fugiat magnam! Quibusdam, molestiae repellat? Eveniet amet, sit quaerat dolorum 
+                    enim ducimus, quam saepe dolore maiores labore suscipit laboriosam dolor odit est minus cumque aperiam!
+                  
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                  </p>
+                </i>  
+
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </div>
+          </div>
+
+
+          
     <?php
     }
     ?>
@@ -231,11 +255,30 @@ if (!empty($_SESSION["CI"])) {
 
   
 
-
-
-
-
-
+       <!--START FOOTER-->
+       <section class="container-fluid footer_section">
+                 <div class="footer">
+                 <div class="container-fluid" style="display: flex; justify-content: center; margin-top: 50px;">
+                  <div class="row">
+                      <div class="">
+                          <p style="color: #000;" class="m-0">Virtual Assistance
+                              &copy;  Todos los derechos reservados. XDV® | Designed by <a href="" style="color: blue;">XDV</a>
+                          </p>
+                          <br>
+                          <div class="linear"></div>
+                          <div style="display: flex; justify-content: center;" class="icons">
+                              <img style="width: 40px;" src="./images/linkkedin.svg" alt="">
+                              <img style="width: 40px;" src="./images/wp.svg" alt="">
+                              <img style="width: 40px;" src="./images/instagram.svg" alt="">                                
+                          </div>
+      
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+            </section>
+            <!--START FOOTER-->
 
 
 

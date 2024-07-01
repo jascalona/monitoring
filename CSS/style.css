@@ -832,7 +832,7 @@ body {
   /* end info section */
   /* footer section*/
   .footer_section {
-    background-color: #8547ca;
+    background-color: #e6e6e6;
     padding: 20px;
   }
   
@@ -848,7 +848,10 @@ body {
 
 /*SESION-PUBLIC*/
 .sesion-public {
+  background: rgb(156, 152, 152);
+  padding: 100px;
   margin: 8%;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -882,7 +885,7 @@ body {
 
 @media (max-width: 970px) {
   .sesion-public p{
-    font-size: 15px;
+      font-size: 15px;
   }
 }
 
@@ -892,6 +895,7 @@ body {
       justify-content: center;
       flex-direction: column;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -904,3 +908,4 @@ body {
       height: 250px;
     }
 }
+

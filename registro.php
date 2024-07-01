@@ -22,7 +22,7 @@ include "./CONTROLLER/conexion.php";
     <title>Registros</title>
 
     <!--CSS STYLES-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="http://localhost/monitoring//CSS/style.css">
     <link rel="stylesheet" href="http://localhost/monitoring//CSS/conf.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/bootstrap.css">
@@ -262,9 +262,33 @@ include "./CONTROLLER/conexion.php";
                     </table>
 
 
+                </div>
 
-
-
+                        
+                 <!--START FOOTER-->
+                 <section class="container-fluid footer_section">
+                 <div class="footer">
+                 <div class="container-fluid" style="display: flex; justify-content: center; margin-top: 50px;">
+                  <div class="row">
+                      <div class="">
+                          <p style="color: #000;" class="m-0">Virtual Assistance
+                              &copy;  Todos los derechos reservados. XDV® | Designed by <a href="" style="color: blue;">XDV</a>
+                          </p>
+                          <br>
+                          <div class="linear"></div>
+                          <div style="display: flex; justify-content: center;" class="icons">
+                              <img style="width: 40px;" src="./images/linkkedin.svg" alt="">
+                              <img style="width: 40px;" src="./images/wp.svg" alt="">
+                              <img style="width: 40px;" src="./images/instagram.svg" alt="">                                
+                          </div>
+      
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+            </section>
+            <!--START FOOTER-->
 
 
     
