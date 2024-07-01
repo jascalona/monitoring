@@ -488,7 +488,49 @@ include "./CONTROLLER/conexion.php";
                 include "./CONTROLLER/Uload.php";
             ?>
     
-         
+            <div class="container-tables">
+                <table class="table table-bordered" >    
+                    
+                    <thead class="table-primary">
+                        <tr>
+                            <th class="col">CI</th>
+                            <th class="col">Nombre</th>
+                            <th class="col">Apellido</th>
+                            <th class="col">Cliente</th>
+                            <th class="col">Status</th>
+                            <th class="col">Fecha</th>
+                            <th class="col">Tiempo</th>
+                            <th class="col">Localidad</th>
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+
+                
+                        <?php
+                        include "./CONTROLLER/conexion.php";
+                        include "./CONTROLLER/validar.php";
+                        $sql=$conexion->query(" SELECT *FROM  Uload WHERE ci= $_SESSION[CI] ");
+                        while($datos = $sql->fetch_object()){ 
+                            ?>
+                
+                            <tr>
+                                <td><?= $datos->ci?></td>
+                                <td><?= $datos->name?></td>
+                                <td><?= $datos->surname?></td>
+                                <td><?= $datos->customer?></td>
+                                <td><?= $datos->status?></td>
+                                <td><?= $datos->date?></td>
+                                <td><?= $datos->time?></td>
+                                <td><?= $datos->location?></td>
+                            </tr>
+                
+                            <?php
+                            
+                            }
+                            ?>
+                    </tbody>
+                    </table>
                 
 
 
