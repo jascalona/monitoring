@@ -61,7 +61,7 @@ body {
     height: 100vh;
     position: relative;
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f2f7fd), color-stop(45%, #1d3127));
-    background: linear-gradient(to right, #bacce1 50%, #0d1c22 50%);
+    background: linear-gradient(to right, #bacce1 50%, #0d1c22 70%);
   }
   
   .sub_page .hero_area {
@@ -200,17 +200,7 @@ body {
             box-shadow: none;
   }
   
-  .custom_nav-container .nav_search-btn {
-    background-image: url(../images/search-icon.png);
-    background-size: 18px;
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
-    padding: 0;
-    border: none;
-    margin: 0 40px 0 15px;
-    background-position: center;
-  }
+
   
   .navbar-brand {
     display: -webkit-box;
