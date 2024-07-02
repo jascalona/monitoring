@@ -39,7 +39,6 @@ include "./CONTROLLER/conexion.php";
     <!--FRAMEWORK BOOTSTRAP-->
 
     <!-- SCRIPT GEOLOCALIZACION -->
-     <script src="./JS/geolocalizacion.js"></script>
     <!-- SCRIPT GEOLOCALIZACION -->
 
 </head>
@@ -225,10 +224,54 @@ include "./CONTROLLER/conexion.php";
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Localidad</label>
 
+                                        <script>                            
+                                            
+                                            if (navigator.geolocation) {
+                                                
+                                                navigator.geolocation.getCurrentPosition(success,error, options);
+                                            
+                                                    
+                                                } else{
+                                                    
+                                                    alert("Este Navegador no es compatible con la geolocalizacion, NOTA: Utilice otro navegador")
+                                                }
+                                            
+                                            // var options
+                                            var options = {
+                                                EnableHighAccuracy:true,
+                                                Timeout: 500,
+                                                MaximunAge:0
+                                            }
+                                            
+                                            //Insesion geolocalizacion
+                                            //var success
+                                            
+                                            function success(getCurrentPosition){
+                                                //var geo
+                                            
+                                                let coords = getCurrentPosition.coords;
+                                            
+                                                
+                                                console.log(getCurrentPosition);
+
+                                                //document.getElementById("geolocalizacion").innerHTML = "latitud:" + coords.latitude + "<br>" + "longitud:" + coords.longitude;
+                                            }
+                                            
+                                            //script error
+                                            
+                                            function error(err){
+                                            
+                                                alert("Solicitud de geolocalización denegada por el usuario!")
+                                            }
+            
+
+                                        </script>
+  
                                         <div id="geolocalizacion">
 
-                                        <input id="geolocalizacion" type="text" name="location" class="form-control" value="   ">
                                         </div>
+
+                                        <input id="geolocalizacion" onclick="geolocalizacion" type="text" name="location" class="form-control" value="" >
                                     </div>
 
                                 </div>
