@@ -252,9 +252,14 @@ include "./CONTROLLER/conexion.php";
                                                 let coords = getCurrentPosition.coords;
                                             
                                                 
-                                                console.log(getCurrentPosition);
+                                                let latitude = coords.latitude;
 
-                                                //document.getElementById("geolocalizacion").innerHTML = "latitud:" + coords.latitude + "<br>" + "longitud:" + coords.longitude;
+                                                let longitude =coords.longitude
+
+
+
+
+                                                document.getElementById("geolocalizacion").innerHTML = coords.latitude + "," + coords.longitude;
                                             }
                                             
                                             //script error
@@ -267,11 +272,10 @@ include "./CONTROLLER/conexion.php";
 
                                         </script>
   
-                                        <div id="geolocalizacion">
-
+                                        <div id="geolocalizacion" >
+                                            <input id="geolocalizacion" type="text" name="location" class="form-control" value="" >
                                         </div>
 
-                                        <input id="geolocalizacion" onclick="geolocalizacion" type="text" name="location" class="form-control" value="" >
                                     </div>
 
                                 </div>
