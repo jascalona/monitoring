@@ -38,6 +38,10 @@ include "./CONTROLLER/conexion.php";
     <script src="./JS/FRAMEWORK/bootstrap_ii.js"></script>
     <!--FRAMEWORK BOOTSTRAP-->
 
+    <!-- SCRIPT GEOLOCALIZACION -->
+     <script src="./JS/geolocalizacion.js"></script>
+    <!-- SCRIPT GEOLOCALIZACION -->
+
 </head>
 <body class="sub_page">
 
@@ -218,10 +222,13 @@ include "./CONTROLLER/conexion.php";
                                         <input  type="time" name="time" id="time" readonly class="form-control" value="<?php echo $current_time?>" >
                                     </div>
 
-
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Localidad</label>
-                                        <input type="text" name="location" id="location" class="form-control" placeholder="Localidad" required>
+
+                                        <div id="geolocalizacion">
+
+                                        <input id="geolocalizacion" type="text" name="location" class="form-control" value="   ">
+                                        </div>
                                     </div>
 
                                 </div>

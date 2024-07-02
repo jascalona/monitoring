@@ -38,7 +38,9 @@
 
                 let coords = getCurrentPosition.coords;
 
-                document.getElementById("location").innerHTML = "latitud:" + coords.latitude + "<br>" + "longitud:" + coords.longitude;
+                console.log(getCurrentPosition);
+
+//                document.getElementById("location").innerHTML = "latitud:" + coords.latitude + "<br>" + "longitud:" + coords.longitude;
             }
 
             //script error
