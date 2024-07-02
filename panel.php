@@ -106,9 +106,9 @@ if (!empty($_SESSION["CI"])) {
                 program
               </h1>
               <div>
-                <a style="text-decoration: none;" href="">
+           <!--     <a style="text-decoration: none;" href="">
                   Echar un Vistazo
-                </a>
+                </a>   -->
               </div>
             </div>
           </div>
@@ -202,9 +202,9 @@ if (!empty($_SESSION["CI"])) {
                 program
               </h1>
               <div>
-                <a style="text-decoration: none;" href="">
+            <!--    <a style="text-decoration: none;" href="">
                   Echar un Vistazo
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
