@@ -28,10 +28,10 @@ function success(getCurrentPosition){
 
     var longitude =coords.longitude
 
-    var geos = String(coords.latitude) + String(coords.longitude);
+    var geos = String(coords.latitude) + "," + String(coords.longitude);
 
 
-    document.getElementById("latitude").value=geos;
+    document.getElementById("geo").value=geos;
 
 
     //declaracion para id div
