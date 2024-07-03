@@ -252,14 +252,19 @@ include "./CONTROLLER/conexion.php";
                                                 let coords = getCurrentPosition.coords;
                                             
                                                 
-                                                let latitude = coords.latitude;
+                                                var latitude = coords.latitude;
 
-                                                let longitude =coords.longitude
+                                                var longitude =coords.longitude
+
+                                                var geos = String(coords.latitude) + String(coords.longitude);
 
 
+                                                document.getElementById("latitude").value=geos;
 
 
-                                                document.getElementById("geolocalizacion").innerHTML = coords.latitude + "," + coords.longitude;
+                                                //declaracion para id div
+                                               // document.getElementsByTagName("geolocalizacion").innerHTML = coords.latitude + "," + coords.longitude;
+                                                
                                             }
                                             
                                             //script error
@@ -272,9 +277,12 @@ include "./CONTROLLER/conexion.php";
 
                                         </script>
   
-                                        <div id="geolocalizacion" >
-                                            <input id="geolocalizacion" type="text" name="location" class="form-control" value="" >
-                                        </div>
+
+                                        <div id="geolocalizacion">
+                                            <input id="latitude" type="text" name="location" class="form-control" value="" >
+                                          <!--  <input id="longitude" type="text" name="location" class="form-control" value="" >
+                                        -->
+                                        </din>
 
                                     </div>
 

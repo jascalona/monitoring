@@ -1,10 +1,5 @@
-
-//var success
-//var error
-//options
-
 if (navigator.geolocation) {
-                
+                                                
     navigator.geolocation.getCurrentPosition(success,error, options);
 
         
@@ -28,7 +23,20 @@ function success(getCurrentPosition){
 
     let coords = getCurrentPosition.coords;
 
-    document.getElementById("geolocalizacion").innerHTML = "latitud:" + coords.latitude + "<br>" + "longitud:" + coords.longitude;
+    
+    var latitude = coords.latitude;
+
+    var longitude =coords.longitude
+
+    var geos = String(coords.latitude) + String(coords.longitude);
+
+
+    document.getElementById("latitude").value=geos;
+
+
+    //declaracion para id div
+   // document.getElementsByTagName("geolocalizacion").innerHTML = coords.latitude + "," + coords.longitude;
+    
 }
 
 //script error
