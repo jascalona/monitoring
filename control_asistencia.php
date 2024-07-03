@@ -459,8 +459,8 @@ include "./CONTROLLER/conexion.php";
     
     
                                         <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Localidad</label>
-                                            <input id="geo" type="text" name="location" class="form-control" readonly required>
+                                            <!--NOTA: se aplica el hidden solo para roll operator-->
+                                            <input id="geo" type="hidden" name="location" class="form-control" readonly required>
                                             </div>
     
                                     </div>
@@ -502,7 +502,6 @@ include "./CONTROLLER/conexion.php";
                             <th class="col">Status</th>
                             <th class="col">Fecha</th>
                             <th class="col">Tiempo</th>
-                            <th class="col">Localidad</th>
                         </tr>
                 
                     </thead>
@@ -524,7 +523,6 @@ include "./CONTROLLER/conexion.php";
                                 <td><?= $datos->status?></td>
                                 <td><?= $datos->date?></td>
                                 <td><?= $datos->time?></td>
-                                <td><?= $datos->location?></td>
                             </tr>
                 
                             <?php
