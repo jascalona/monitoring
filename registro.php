@@ -206,7 +206,7 @@ include "./CONTROLLER/conexion.php";
        <div class="search">
             <div class="container-fluid">
                 <form class="d-flex">
-                    <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar">
+                    <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar...">
                     <hr>
                 </form>
             </div>

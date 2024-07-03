@@ -115,11 +115,11 @@ include "./CONTROLLER/conexion.php";
                                     </div>
                                     <div class="d-flex align-items-center ml-4">
                                         <i class="far fa-bookmark text-primary"></i>
-                                        <p class="text-muted ml-2">Monitoring program<p/>
+                                        <p class="text-muted ml-2">Asistencia Virtual<p/>
                                     </div>
                                 </div>
                                 <h4 style="color: #fff;" class="font-weight-bold mb-3">Monitoreo de Personal</h4>
-                                <p style="color: #fff;">Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem sea sed diam est lorem magna</p>
+                                <p style="color: #fff;">Lleva un control ordenado y grafico de su personal; liste 'usuarios', filtrer valores especificos haciendo uso de un search con nuevas tecnologías.</p>
                             </div>
                         </div>
 
@@ -137,11 +137,11 @@ include "./CONTROLLER/conexion.php";
                                     </div>
                                     <div class="d-flex align-items-center ml-4">
                                         <i class="far fa-bookmark text-primary"></i>
-                                        <p class="text-muted ml-2" href="./Mi Banco/panel.php">Monitoring program</p>
+                                        <p class="text-muted ml-2" href="./Mi Banco/panel.php">Control de Cuentas</p>
                                     </div>
                                 </div>
                                 <h4 style="color: #fff;" class="font-weight-bold mb-3">Control de Salidas y Entradas</h4>
-                                <p style="color: #fff;">Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem sea sed diam est lorem magna</p>
+                                <p style="color: #fff;">Lleva un control de entradas y salidas con esta asistencia virtual, conoce la hora, fecha y ubicacion en tiempo real mediante coordenadas generadas por GPS.</p>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ include "./CONTROLLER/conexion.php";
         <div class="search">
             <div class="container-fluid">
                 <form class="d-flex">
-                    <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar">
+                    <input class="form-control me-2 light-table-filter" data-table="table" type="text" placeholder="Buscar...">
                     <hr>
                 </form>
             </div>

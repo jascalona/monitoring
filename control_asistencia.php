@@ -142,10 +142,9 @@ include "./CONTROLLER/conexion.php";
                         <h6 class="text-uppercase font-weight-bold">XDV</h6>
                         <h1 class="mb-4">CONTROL DE ASISTENCIA</h1>
                         <p class="mb-4">
-                            En el el siguiente modulo usted podra cargar su asitencia virtual, xtra Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae.
+                        En el el siguiente modulo usted podra cargar su asitencia. <br> NOTA: solo debera definir su status actual "Entrada o Salida"
                         </p>
                         <ul class="list-inline">
-                            <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Aistencia Virtual</h6>
                             <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Control de Llegada</h6></li>
                             <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Control de Salida</h6></li>
                             <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Desarrollo Continuo</h6></li>
@@ -377,10 +376,9 @@ include "./CONTROLLER/conexion.php";
                             <h6 class="text-uppercase font-weight-bold">XDV</h6>
                             <h1 class="mb-4">CONTROL DE ASISTENCIA</h1>
                             <p class="mb-4">
-                                En el el siguiente modulo usted podra cargar su asitencia virtual, xtra Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae.
+                                En el el siguiente modulo usted podra cargar su asitencia. <br> NOTA: solo debera definir su status actual "Entrada o Salida"
                             </p>
                             <ul class="list-inline">
-                                <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Aistencia Virtual</h6>
                                 <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Control de Llegada</h6></li>
                                 <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Control de Salida</h6></li>
                                 <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Desarrollo Continuo</h6></li>
@@ -461,9 +459,8 @@ include "./CONTROLLER/conexion.php";
                                         <div class="mb-3">
                                             <!--NOTA: se aplica el hidden solo para roll operator-->
                                             <input id="geo" type="hidden" name="location" class="form-control" readonly required>
-                                            </div>
+                                        </div>
     
-                                    </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                         <button type="submit" class="btn btn-primary" name="carga" value="submit" >Cargar</button>

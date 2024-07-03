@@ -102,8 +102,8 @@ if (!empty($_SESSION["CI"])) {
                 Monitoring
               </h2>
               <h1>
-                Monitoring  <br />
-                program
+                Virtual  <br />
+                Assistance
               </h1>
               <div>
            <!--     <a style="text-decoration: none;" href="">
@@ -132,17 +132,23 @@ if (!empty($_SESSION["CI"])) {
 
           <div class="sesion-public">
                 <i class="text-center">
-                  <p> <b>L</b>  orem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe unde ea, 
-                    perspiciatis voluptatum incidunt facere a suscipit sunt tempora est dolore illum corporis 
-                    reprehenderit fugiat magnam! Quibusdam, molestiae repellat? Eveniet amet, sit quaerat dolorum 
-                    enim ducimus, quam saepe dolore maiores labore suscipit laboriosam dolor odit est minus cumque aperiam!
-                  
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                  <p><b>L</b>o que sabemos es una gota, lo que ignoramos es un océano!
+                  <br>
+                  "Isaac Newton"
+                  <br><br>
+                  Vivimos en un mundo modelado por la tecnología. En nuestra vida
+                  cotidiana la tecnología esta omnipresente, la misma marca el ritmo 
+                  del progreso en las pautas de la vida
+                  La idea del progreso, tal como lo concebimos hoy,
+                  está íntimamente asociada a la idea de la
+                  tecnología, y por consiguiente a la idea de ciencia y de
+                  técnica. Estas tres palabras clave, ciencia,
+                  técnica y tecnología, vinculadas a actividades
+                  específicas del hombre,
+                  están indisolublemente ligadas al mundo en que vivimos, un
+                  mundo más artificial que natural, un mundo creado por
+                  el hombre en
+                  sus ansias de dominar transformar las fuerzas de la naturaleza.
                   </p>
                 </i>  
 
@@ -225,19 +231,25 @@ if (!empty($_SESSION["CI"])) {
 
     </div>
 
-        <div class="sesion-public">
+    <div class="sesion-public">
                 <i class="text-center">
-                  <p> <b>L</b>  orem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe unde ea, 
-                    perspiciatis voluptatum incidunt facere a suscipit sunt tempora est dolore illum corporis 
-                    reprehenderit fugiat magnam! Quibusdam, molestiae repellat? Eveniet amet, sit quaerat dolorum 
-                    enim ducimus, quam saepe dolore maiores labore suscipit laboriosam dolor odit est minus cumque aperiam!
-                  
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat?
+                  <p><b>L</b>o que sabemos es una gota, lo que ignoramos es un océano!
+                  <br>
+                  "Isaac Newton"
+                  <br><br>
+                  Vivimos en un mundo modelado por la tecnología. En nuestra vida
+                  cotidiana la tecnología esta omnipresente, la misma marca el ritmo 
+                  del progreso en las pautas de la vida
+                  La idea del progreso, tal como lo concebimos hoy,
+                  está íntimamente asociada a la idea de la
+                  tecnología, y por consiguiente a la idea de ciencia y de
+                  técnica. Estas tres palabras clave, ciencia,
+                  técnica y tecnología, vinculadas a actividades
+                  específicas del hombre,
+                  están indisolublemente ligadas al mundo en que vivimos, un
+                  mundo más artificial que natural, un mundo creado por
+                  el hombre en
+                  sus ansias de dominar transformar las fuerzas de la naturaleza.
                   </p>
                 </i>  
 
