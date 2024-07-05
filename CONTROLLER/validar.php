@@ -1,8 +1,6 @@
 <?php
-
-include "./CONTROLLER/conexion.php";
-
 session_start();
+include "./CONTROLLER/conexion.php";
 
 if (!empty($_POST['btn-i'])) {
     if (!empty($_POST['user']) and !empty($_POST['password'])) {
@@ -36,5 +34,3 @@ if (!empty($_POST['btn-i'])) {
         echo "DEBE LLENAR LOS CAMPOS";
     }
 }
-
-?>
