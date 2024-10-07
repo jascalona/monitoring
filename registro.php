@@ -57,7 +57,7 @@ include "./CONTROLLER/conexion.php";
 <body class="sub_page">
 
 
-    <div style="background: #003366;" class="hero_area">
+    <div style="background: #212F3D;" class="hero_area">
     <!-- header section strats -->
         <header class="header_section">
         <div class="container-fluid">
@@ -225,7 +225,7 @@ include "./CONTROLLER/conexion.php";
 
         <div class="container-t-register">
             <div class="table-register">
-                <table class="table table-bordered" >    
+                <table style="" class="table table-bordered" >    
                     <thead class="table-dark">
                         <tr>
                             <th class="col">CI</th>

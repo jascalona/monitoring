@@ -35,7 +35,7 @@
                 
                 <div class="background-lg">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+                        <img src="./images/xdv.png" alt="">
                     </div>
 
                     <?php
@@ -45,12 +45,12 @@
                     <div class="modal-body">
 
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">User</label>
+                            <label for="recipient-name" class="col-form-label"><i class='bx bxs-user'></i> User</label>
                             <input type="text" class="form-control" name="user" id="user" placeholder="Ingrese su Correo">
                         </div>
 
                         <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Password</label>
+                            <label for="message-text" class="col-form-label"><i class='bx bxs-key'></i>Password</label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese su Clave">
                         </div>
                         

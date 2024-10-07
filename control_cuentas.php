@@ -53,7 +53,7 @@ include "./CONTROLLER/conexion.php";
 <body class="sub_page">
 
        
-  <div style="background: #154360;" class="hero_area">
+  <div style="background: #10375C;" class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
