@@ -329,10 +329,9 @@ include "./CONTROLLER/conexion.php";
                     <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contacto</h5>
                     <p><i class="fa fa-map-marker-alt mr-2"></i>Av. Ávila, Caracas 1060, Miranda, Venezuela</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>+58 05009376934</p>
-                    <p><i class="fa fa-envelope mr-2"></i>cac@grupoxven.com</p>
-                    
-            </div>
-        </div>
+                    <p><i class="fa fa-envelope mr-2"></i>cac@grupoxven.com</p>    
+                </div>
+
         <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
             <div class="row">
                 <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">

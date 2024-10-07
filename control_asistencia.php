@@ -536,11 +536,6 @@ include "./CONTROLLER/conexion.php";
                             ?>
                     </tbody>
                     </table>
-                
-
-
-             
-
     
             <?php
             }
