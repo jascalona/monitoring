@@ -383,20 +383,29 @@ if (!empty($_SESSION["CI"])) {
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
-                                    <form>
+
+                                    <form method="POST" >
+                                    <?php include './CONTROLLER/Uload_comentario.php'; ?>
+                                    
                                       <div class="mb-3">
                                         <p for="recipient-name" class="text-dark col-form-label">Hola <b><?php echo $_SESSION['name'];?></b>, queremos tu opinión sobre nuestro Programa!</p>
+                                        <input type="hidden" name="ci" id="ci" value="<?php echo $_SESSION['CI'];?>" >
+                                        <input type="hidden" name="name" id="name" value="<?php echo $_SESSION['name'];?>" >
+                                        <input type="hidden" name="surname" id="surname" value="<?php echo $_SESSION['surname'];?>" >
+
                                       </div>
                                       <div class="mb-3">
                                         <label for="message-text" class="col-form-label text-dark ">Message:</label>
                                         <textarea class="form-control" name="message" id="message" placeholder="Ingrese un Comentario..."></textarea>
                                       </div>
-                                    </form>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Send message</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button name="btn-comen" type="submit" value="submit" class="btn btn-primary">Enviar Comentario</button>
                                   </div>
+
+                                  </form>
+
                                 </div>
                               </div>
                             </div>                            
