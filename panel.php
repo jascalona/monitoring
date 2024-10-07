@@ -140,7 +140,7 @@ if (!empty($_SESSION["CI"])) {
        <!--#01-->
        <details>
             <summary>¿Que es Virtual Assistance?</summary>
-            <p>Virtual assistance es una interfaz desarrollada con el fin de llevar un control de asistencia 
+            <p style="font-size: 18px;">Virtual assistance es una interfaz desarrollada con el fin de llevar un control de asistencia 
               "Entradas y Salidas" de tu personal.
             </p>
           </details>
@@ -149,7 +149,7 @@ if (!empty($_SESSION["CI"])) {
         <!--#02-->
          <details>
             <summary>¿Como hago mi registro?</summary>
-            <p>Luego de iniciar sesión dirijase al Control de Asistencia, una vez alli el programa ejecutara 
+            <p style="font-size: 18px;">Luego de iniciar sesión dirijase al Control de Asistencia, una vez alli el programa ejecutara 
               los servicios "GEO" donde debera aceptar los permisos posteriormente de click en el boton Cargar 
               Asistencia y defina su Status actual en el campo <b>"Status"</b> para finalizar el registro de click en el boton <b>"Cargar"</b> 
               tambien puede consultar la guia: <a href="./Guia_operador.pdf">Guia_operador.pdf</a></p>

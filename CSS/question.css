@@ -25,8 +25,9 @@
     cursor: pointer;
     font-weight: bold;
    }
-   p{
+   .container-preguntas-frecuentes section p  {
     padding: 10px;
+    font-size: 10px;
     background:white;
     color: rgb(61, 61, 61);
    }
