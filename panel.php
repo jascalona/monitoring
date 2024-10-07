@@ -190,15 +190,17 @@ if (!empty($_SESSION["CI"])) {
               -->
 
 
-
-
-
-
-
     <!-- close sesion administrator -->
     <?php
     }
     ?>
+
+    <div class="container-comentarios">
+      <section>
+        
+      </section>
+    </div>
+
     <!-- panel habilitado para administradores end -->
 
 
@@ -327,33 +329,98 @@ if (!empty($_SESSION["CI"])) {
     <!-- panel habilitado para operator end -->
    
 
-  
+    
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand">
+                        <h1 class="text-primary"><span class="text-white">GRUPO XDV</span></h1>
+                    </a>
+                    <p>
+                      Somos XDV, nos enfocamos con calidad, excelencia y gran entusiasmo para lograr los retos propuestos y alcanzar la satisfacción tanto de nuestros clientes internos y externos, 
+                      a través de nuestra tecnología, nuestra experiencia y nuestro servicio profecional, que permite que su negocio funcione de un modo
+                      más inteligente, facil y rapido sea cual sea su situación.
+                    </p>
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">SIGUENOS</h6>
+                    <div class="d-flex justify-content-start">
+                        <p class="btn btn-outline-primary btn-square mr-2"><i class='bx bxl-facebook'></i></p>
+                        <p class="btn btn-outline-primary btn-square mr-2"><i class='bx bxl-instagram'></i></p>
+                        <p class="btn btn-outline-primary btn-square"><i class='bx bxl-whatsapp'></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Acceso Directo</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="./panel.php"><i class="fa fa-angle-right mr-2"></i>Panel</a>
+                        <a class="text-white-50 mb-2" href="./control_asistencia.php"><i class="fa fa-angle-right mr-2"></i>Control de Asistencia</a>
+                    </div>
+                </div>
 
-       <!--START FOOTER-->
-       <section class="container-fluid footer_section">
-                 <div class="footer">
-                 <div class="container-fluid" style="display: flex; justify-content: center; margin-top: 50px;">
-                  <div class="row">
-                      <div class="">
-                          <p style="color: #000;" class="m-0">Virtual Assistance
-                              &copy;  Todos los derechos reservados. XDV® | Designed by <a href="" style="color: blue;">XDV</a>
-                          </p>
-                          <br>
-                          <div class="linear"></div>
-                          <div style="display: flex; justify-content: center;" class="icons">
-                              <img style="width: 40px;" src="./images/linkkedin.svg" alt="">
-                              <img style="width: 40px;" src="./images/wp.svg" alt="">
-                              <img style="width: 40px;" src="./images/instagram.svg" alt="">                                
+                <div class="col-lg-3 col-md-6 mb-5"></div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contacto</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Av. Ávila, Caracas 1060, Miranda, Venezuela</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+58 05009376934</p>
+                    <p><i class="fa fa-envelope mr-2"></i>cac@grupoxven.com</p>
+                    
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Agrega tus Comentarios!</h6>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <div class="input-group-append">
+
+                            <!--moddal comentarios-->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">
+                              Agregar Comentario
+                            </button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title text-dark fs-5" id="exampleModalLabel">Nuevo Comentario</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="mb-3">
+                                        <p for="recipient-name" class="text-dark col-form-label">Hola <b><?php echo $_SESSION['name'];?></b>, queremos tu opinión sobre nuestro Programa!</p>
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="message-text" class="col-form-label text-dark ">Message:</label>
+                                        <textarea class="form-control" name="message" id="message" placeholder="Ingrese un Comentario..."></textarea>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>                            
                           </div>
-      
-                      </div>
-                  </div>
-              </div>
-            </div>
-            </div>
-            </section>
-            <!--START FOOTER-->
+                          <!--moddal comentarios-->
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="row">
+                <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white-50">Virtual Assistance &copy; <a href="" style="color: red;">XDV</a>. Todos los derechos reservados. XDV®</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center text-md-right">
+                    <p class="m-0 text-white-50">Designed by <a href="" style="color: red;">JE</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
 
 
